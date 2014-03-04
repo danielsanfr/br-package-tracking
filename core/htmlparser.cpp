@@ -7,9 +7,9 @@ HtmlParser::HtmlParser(QObject *parent) :
     QObject(parent) {
 }
 
-QList< PackageInfoModel > HtmlParser::parse(QString html) {
+QList< Information > HtmlParser::parse(QString html) {
     changeFromHtmlToXml(html);
-    QList< PackageInfoModel > checkPointsList;
+    QList< Information > checkpointsList;
     if (!m_xml.isEmpty()) {
         QXmlStreamReader xmlStreamReader(m_xml);
         while (!xmlStreamReader.atEnd() && !xmlStreamReader.hasError()) {
@@ -27,35 +27,35 @@ QList< PackageInfoModel > HtmlParser::parse(QString html) {
                 }
                 /* If it's named person, we'll dig the information from there.*/
                 if(xmlStreamReader.name() == "tr") {
-                    checkPointsList.append(parseCheckpoint(xmlStreamReader));
+                    checkpointsList.append(parseCheckpoint(xmlStreamReader));
                 }
             }
         }
     }
-    checkPointsList.removeAt(0);
-    int length = checkPointsList.length();
+    checkpointsList.removeAt(0);
+    int length = checkpointsList.length();
     for (int i = length - 1; i > 0; --i) {
         bool isChanget = false;
-        PackageInfoModel checkpoint;
-        if (checkPointsList.at(i).date().isEmpty()) {
-            checkpoint.setDate(checkPointsList.at(i - 1).date());
+        Information checkpoint;
+        if (checkpointsList.at(i).date().isEmpty()) {
+            checkpoint.setDate(checkpointsList.at(i - 1).date());
             isChanget = true;
         }
-        if (checkPointsList.at(i).location().isEmpty()) {
-            checkpoint.setLocation(checkPointsList.at(i - 1).location());
+        if (checkpointsList.at(i).location().isEmpty()) {
+            checkpoint.setLocation(checkpointsList.at(i - 1).location());
             isChanget = true;
         }
         if (isChanget) {
-            checkpoint.setSituation(checkPointsList.at(i).situation());
-            checkPointsList.removeAt(i);
-            checkPointsList.insert(i, checkpoint);
+            checkpoint.setSituation(checkpointsList.at(i).situation());
+            checkpointsList.removeAt(i);
+            checkpointsList.insert(i, checkpoint);
         }
     }
-    return checkPointsList;
+    return checkpointsList;
 }
 
-PackageInfoModel HtmlParser::parseCheckpoint(QXmlStreamReader &xmlStreamReader) {
-    PackageInfoModel checkpoint;
+Information HtmlParser::parseCheckpoint(QXmlStreamReader &xmlStreamReader) {
+    Information checkpoint;
     /* Let's check that we're really getting a person. */
     if(xmlStreamReader.tokenType() != QXmlStreamReader::StartElement &&
             xmlStreamReader.name() == "tr") {

@@ -125,6 +125,6 @@ QString Package::countryAcronym() const {
     return m_countryAcronym;
 }
 
-QList< PackageInfoModel > Package::checkpoints() const {
+QList< Information > Package::checkpoints() const {
     return m_checkpoints;
 }

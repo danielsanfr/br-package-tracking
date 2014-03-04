@@ -1,8 +1,8 @@
-#include "model/packageinfomodel.h"
+#include "model/information.h"
 
 using namespace brpackagetracking::model;
 
-PackageInfoModel::PackageInfoModel(QString date, QString location, QString situation, QObject *parent) :
+Information::Information(QString date, QString location, QString situation, QObject *parent) :
     QObject(parent), m_date(""), m_location(""), m_situation("") {
     m_date = date;
     emit dateChanged();
@@ -12,7 +12,7 @@ PackageInfoModel::PackageInfoModel(QString date, QString location, QString situa
     emit situationChanged();
 }
 
-PackageInfoModel::PackageInfoModel(const PackageInfoModel &other) :
+Information::Information(const Information &other) :
    QObject(),  m_date(""), m_location(""), m_situation("") {
     m_date = other.date();
     emit dateChanged();
@@ -22,38 +22,38 @@ PackageInfoModel::PackageInfoModel(const PackageInfoModel &other) :
     emit situationChanged();
 }
 
-PackageInfoModel::PackageInfoModel(QObject *parent) :
+Information::Information(QObject *parent) :
     QObject(parent), m_date(""), m_location(""), m_situation("") {
 }
 
-QString PackageInfoModel::date() const {
+QString Information::date() const {
     return m_date;
 }
 
-void PackageInfoModel::setDate(QString newDate) {
+void Information::setDate(QString newDate) {
     m_date = newDate;
     emit dateChanged();
 }
 
-QString PackageInfoModel::location() const {
+QString Information::location() const {
     return m_location;
 }
 
-void PackageInfoModel::setLocation(QString newLocation) {
+void Information::setLocation(QString newLocation) {
     m_location = newLocation;
     emit locationChanged();
 }
 
-QString PackageInfoModel::situation() const {
+QString Information::situation() const {
     return m_situation;
 }
 
-void PackageInfoModel::setSituation(QString newSituation) {
+void Information::setSituation(QString newSituation) {
     m_situation = newSituation;
     emit situationChanged();
 }
 
-PackageInfoModel &PackageInfoModel::operator=(const PackageInfoModel &other) {
+Information &Information::operator=(const Information &other) {
     if (this != &other) {
         m_date = other.date();
         emit dateChanged();

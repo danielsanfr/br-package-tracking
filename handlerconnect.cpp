@@ -8,7 +8,7 @@ HandlerConnect::HandlerConnect(QObject *parent) :
 }
 
 void HandlerConnect::handler(Package *package) {
-    QList< PackageInfoModel > checkpoints = package->checkpoints();
+    QList< Information > checkpoints = package->checkpoints();
     int length = checkpoints.length();
     qDebug() << "HandlerConnect::handler:" << "=============================================";
     for (int i = 0; i < length; ++i) {

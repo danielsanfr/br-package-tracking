@@ -6,22 +6,22 @@
 
 namespace brpackagetracking {
 namespace model {
-class PackageInfoModel : public QObject {
+class Information : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString date READ date WRITE setDate NOTIFY dateChanged FINAL)
     Q_PROPERTY(QString location READ location WRITE setLocation NOTIFY locationChanged FINAL)
     Q_PROPERTY(QString situation READ situation WRITE setSituation NOTIFY situationChanged FINAL)
 public:
-    explicit PackageInfoModel(QString date, QString location, QString situation, QObject *parent = 0);
-    PackageInfoModel(const PackageInfoModel &other);
-    explicit PackageInfoModel(QObject *parent = 0);
+    explicit Information(QString date, QString location, QString situation, QObject *parent = 0);
+    Information(const Information &other);
+    explicit Information(QObject *parent = 0);
     Q_INVOKABLE QString date() const;
     Q_INVOKABLE void setDate(QString newDate);
     Q_INVOKABLE QString location() const;
     Q_INVOKABLE void setLocation(QString newLocation);
     Q_INVOKABLE QString situation() const;
     Q_INVOKABLE void setSituation(QString newSituation);
-    PackageInfoModel &operator=(const PackageInfoModel &other);
+    Information &operator=(const Information &other);
 signals:
     void dateChanged();
     void locationChanged();

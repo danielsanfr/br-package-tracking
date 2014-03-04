@@ -11,7 +11,7 @@
 #include "util/util.h"
 #include "core/htmlparser.h"
 #include "core/downloadhtml.h"
-#include "model/packageinfomodel.h"
+#include "model/information.h"
 
 #define POST_OFFICE_URL QString("http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_ITEMCODE=&P_LINGUA=001&P_TESTE=&P_TIPO=001&P_COD_UNI=")
 #define POST_OFFICE_URL_M QString("http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_LINGUA=001&P_TIPO=001&P_COD_UNI=")
@@ -39,7 +39,7 @@ public:
     QString serviceCode() const;
     QString countryName() const;
     QString countryAcronym() const;
-    QList< brpackagetracking::model::PackageInfoModel > checkpoints() const;
+    QList< brpackagetracking::model::Information > checkpoints() const;
 signals:
     void loadCompleted(brpackagetracking::Package *package);
     void loadError(QString message);
@@ -60,7 +60,7 @@ private:
     QString m_countryAcronym;
     brpackagetracking::core::HtmlParser *m_htmlParser;
     brpackagetracking::core::DownloadHtml *m_downloadHtml;
-    QList< brpackagetracking::model::PackageInfoModel > m_checkpoints;
+    QList< brpackagetracking::model::Information > m_checkpoints;
 };
 }
 

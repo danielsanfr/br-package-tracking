@@ -9,7 +9,7 @@
 #include <QStringRef>
 #include <QtXml/QXmlStreamReader>
 
-#include "model/packageinfomodel.h"
+#include "model/information.h"
 
 namespace brpackagetracking {
 namespace core {
@@ -17,11 +17,11 @@ class HtmlParser : public QObject {
     Q_OBJECT
 public:
     explicit HtmlParser(QObject *parent = 0);
-    QList< brpackagetracking::model::PackageInfoModel > parse(QString html);
+    QList< brpackagetracking::model::Information > parse(QString html);
 signals:
 public slots:
 private:
-    brpackagetracking::model::PackageInfoModel parseCheckpoint(QXmlStreamReader &xmlStreamReader);
+    brpackagetracking::model::Information parseCheckpoint(QXmlStreamReader &xmlStreamReader);
     void changeFromHtmlToXml(QString html);
     QString m_xml;
 };

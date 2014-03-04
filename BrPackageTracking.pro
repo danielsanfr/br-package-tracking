@@ -17,17 +17,17 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    model/packageinfomodel.cpp \
     package.cpp \
     core/htmlparser.cpp \
     core/downloadhtml.cpp \
     util/util.cpp \
-    handlerconnect.cpp
+    handlerconnect.cpp \
+    model/information.cpp
 
 HEADERS += \
-    model/packageinfomodel.h \
     package.h \
     core/htmlparser.h \
     core/downloadhtml.h \
     util/util.h \
-    handlerconnect.h
+    handlerconnect.h \
+    model/information.h
