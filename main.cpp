@@ -1,16 +1,12 @@
 #include <QCoreApplication>
 
-#include "util.h"
 #include "package.h"
-#include "packageinfomodel.h"
 #include "handlerconnect.h"
 
 using namespace brpackagetracking;
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QCoreApplication a(argc, argv);
-    Util::getInstance();
     HandlerConnect *handler = new HandlerConnect();
     Package *package = new Package("RC274812293HK");
     package->connect(package, SIGNAL(loadCompleted(brpackagetracking::Package*)), handler, SLOT(handler(brpackagetracking::Package*)));

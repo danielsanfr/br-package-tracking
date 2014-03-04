@@ -7,7 +7,7 @@
 #include <QObject>
 
 #include "package.h"
-#include "packageinfomodel.h"
+#include "model/packageinfomodel.h"
 
 class HandlerConnect : public QObject {
     Q_OBJECT

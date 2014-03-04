@@ -9,7 +9,7 @@
 #include <QStringRef>
 #include <QtXml/QXmlStreamReader>
 
-#include "packageinfomodel.h"
+#include "model/packageinfomodel.h"
 
 namespace brpackagetracking {
 namespace core {

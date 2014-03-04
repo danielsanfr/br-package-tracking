@@ -12,6 +12,8 @@
 #include <QIODevice>
 #include <QtXml/QXmlStreamReader>
 
+namespace brpackagetracking {
+namespace util {
 class Util : public QObject {
     Q_OBJECT
 public:
@@ -31,5 +33,7 @@ private:
     QHash<QString, QString> m_services;
     QHash<QString, QMap<QString, QString> > m_countries;
 };
+}
+}
 
 #endif // UTIL_H

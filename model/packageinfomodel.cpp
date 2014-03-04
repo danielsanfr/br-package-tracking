@@ -1,4 +1,4 @@
-#include "packageinfomodel.h"
+#include "model/packageinfomodel.h"
 
 using namespace brpackagetracking::model;
 

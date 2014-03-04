@@ -1,5 +1,6 @@
-#include "util.h"
+#include "util/util.h"
 
+using namespace brpackagetracking::util;
 Util::Util(QObject *parent) :
     QObject(parent) {
     qDebug() << "Util::Util: Constructor";

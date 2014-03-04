@@ -1,6 +1,7 @@
 #include "package.h"
 
 using namespace brpackagetracking;
+using namespace brpackagetracking::util;
 using namespace brpackagetracking::core;
 using namespace brpackagetracking::model;
 

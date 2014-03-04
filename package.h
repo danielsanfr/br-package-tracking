@@ -8,10 +8,10 @@
 #include <QStringRef>
 #include <QVariant>
 
-#include "util.h"
-#include "htmlparser.h"
-#include "downloadhtml.h"
-#include "packageinfomodel.h"
+#include "util/util.h"
+#include "core/htmlparser.h"
+#include "core/downloadhtml.h"
+#include "model/packageinfomodel.h"
 
 #define POST_OFFICE_URL QString("http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_ITEMCODE=&P_LINGUA=001&P_TESTE=&P_TIPO=001&P_COD_UNI=")
 #define POST_OFFICE_URL_M QString("http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_LINGUA=001&P_TIPO=001&P_COD_UNI=")
