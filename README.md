@@ -4,52 +4,51 @@ Using this small API you can get all the updates tracking of your order it from 
 
 Features
 --------
-* Recuperar umas lista contendo todos os status da sua encomenda;
-* Verificar se o código de rastreamente é válido;
-* Recuperar o códido do serviço usado no envio;
-* Nome do serviço usado no envio;
-* Número da encomenda mais o código verificador;
-* Sigla do país de origem;
-* Nome do país de origem;
+* Retrieve a list of all the status of your order;
+* Check if the code is valid rastreamente;
+* Retrieve the Captcha code of the service used to send;
+* Name of the service used to send;
+* Order number plus the code verifier;
+* Symbol of the country of origin;
+* Name of the country of origin.
 
 How to use
 ----------
-You have to execute the following steps:
+You have to execute the following steps for use this API in your project:
 
-- You have to copy the build folder to your project root folder.
+- You have to copy the BrPackageTracking API to your project root folder.
 
-![Screenshot] (https://s3.amazonaws.com/microSamples/Screen+Shot+2013-12-19+at+16.31.16.png)
+- Include the **qt += network** in your **.pro**.
 
-- Include the include(build/build.pri) in your .pro. The result of the addition is:
-
-```
-APP_NAME = AppInfoMicroSample
-
-CONFIG += qt warn_on cascades10
-
-include(build/build.pri)
-include(config.pri)
-```
-
-- Include the header ApplicationInfo.hpp in you ApplicationUI.cpp file, the result should be:
+- Include the **package.h** and **model/information.h** file to your *qt class* as follow:
 
 ```c++
-include "applicationui.hpp"
+#include "myclass.h"
 
-#include <bb/cascades/Application>
-#include <bb/cascades/QmlDocument>
-#include <bb/cascades/AbstractPane>
-#include <bb/cascades/LocaleHandler>
+#include <QDebug>
+#include <QObject>
+#include <QString>
 
-#include "applicationinfo.hpp"
+#include "package.h"
+#include "model/information.h"
 
-using namespace bb::cascades;
+using namespace brpackagetracking;
+using namespace brpackagetracking::model;
 
-ApplicationUI::ApplicationUI(bb::cascades::Application *app) :
-        QObject(app)
-{
-	ApplicationInfo::registerQmlTypes();
-    // prepare the localization
-    m_pTranslator = new QTranslator(this);
-    m_pLocaleHandler = new LocaleHandler(this);
+MyClass::myMethod() :
+        QObject(app) {
+    Package *package = new Package("RC274812293HK");
+    connect(package, SIGNAL(loadCompleted(brpackagetracking::Package*)), this, SLOT(handler(brpackagetracking::Package*)));
+    connect(package, SIGNAL(loadError(QString)), this, SLOT(handlerError(QString)));
+    if (package->validateCode() == Package::NoError) {
+        package->load();
+        qDebug() << "main:" << "Package code:" << package->code();
+        qDebug() << "main:" << "Package service:" << package->serviceCode();
+        qDebug() << "main:" << "Package number:" << package->number();
+        qDebug() << "main:" << "Package country acronym:" << package->countryAcronym();
+        qDebug() << "main:" << "Package service name:" << package->serviceName();
+        qDebug() << "main:" << "Package country name:" << package->countryName();
+    }
 ```
+
+### Note: After using the method *validateCode()* you can now use the methods shown above to get the information from the tracking code. To get a list of checkpoints you will have to connect the signals above and expect your results in 2 slots (one for load completed and one laod error).
