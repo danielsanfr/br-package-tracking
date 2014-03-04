@@ -2,6 +2,14 @@ BrPackageTracking API
 ==================
 Using this small API you can get all the updates tracking of your order it from your respective tracking code. Also you can get various information regarding your code rastreamente. This information is retrieved using the web based postal service of Brazil.
 
+Author
+--------
+This small API was developed by **Daniel San F. da Rocha**. Any questions or suggestions can contact me, I will be very happy to receive my posts about this project.
+
+License
+--------
+The license of this API is the MIT License.
+
 Features
 --------
 * Retrieve a list of all the status of your order;
@@ -20,11 +28,12 @@ You have to execute the following steps for use this API in your project:
 
 - Include the **qt += network** in your **.pro**.
 
-- Include the **package.h** and **model/information.h** file to your *qt class* as follow:
+- Include the **package.h** and **model/information.h** file to your *qt class*, also include the name spaces **brpackagetracking** and **brpackagetracking::model** as follow:
 
 ```c++
 #include "myclass.h"
 
+#include <QList>
 #include <QDebug>
 #include <QObject>
 #include <QString>
@@ -35,8 +44,7 @@ You have to execute the following steps for use this API in your project:
 using namespace brpackagetracking;
 using namespace brpackagetracking::model;
 
-MyClass::myMethod() :
-        QObject(app) {
+void MyClass::myMethod() {
     Package *package = new Package("RC274812293HK");
     connect(package, SIGNAL(loadCompleted(brpackagetracking::Package*)), this, SLOT(handler(brpackagetracking::Package*)));
     connect(package, SIGNAL(loadError(QString)), this, SLOT(handlerError(QString)));
@@ -49,6 +57,7 @@ MyClass::myMethod() :
         qDebug() << "main:" << "Package service name:" << package->serviceName();
         qDebug() << "main:" << "Package country name:" << package->countryName();
     }
+}
 ```
 
 ### Note: After using the method *validateCode()* you can now use the methods shown above to get the information from the tracking code. To get a list of checkpoints you will have to connect the signals above and expect your results in 2 slots (one for load completed and one laod error).
