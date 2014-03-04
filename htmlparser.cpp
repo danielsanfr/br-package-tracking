@@ -1,5 +1,8 @@
 #include "htmlparser.h"
 
+using namespace brpackagetracking::core;
+using namespace brpackagetracking::model;
+
 HtmlParser::HtmlParser(QObject *parent) :
     QObject(parent) {
 }

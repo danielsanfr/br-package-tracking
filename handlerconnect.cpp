@@ -1,5 +1,8 @@
 #include "handlerconnect.h"
 
+using namespace brpackagetracking;
+using namespace brpackagetracking::model;
+
 HandlerConnect::HandlerConnect(QObject *parent) :
     QObject(parent) {
 }

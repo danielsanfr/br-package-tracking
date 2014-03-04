@@ -9,6 +9,8 @@
 #include <QNetworkRequest>
 #include <QNetworkAccessManager>
 
+namespace brpackagetracking {
+namespace core {
 class DownloadHtml : public QObject {
     Q_OBJECT
 public:
@@ -22,5 +24,7 @@ private slots:
 private:
     QNetworkAccessManager *m_accessManager;
 };
+}
+}
 
 #endif // DOWNLOADHTML_H

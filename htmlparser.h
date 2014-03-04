@@ -11,18 +11,21 @@
 
 #include "packageinfomodel.h"
 
-class HtmlParser : public QObject
-{
+namespace brpackagetracking {
+namespace core {
+class HtmlParser : public QObject {
     Q_OBJECT
 public:
     explicit HtmlParser(QObject *parent = 0);
-    QList< PackageInfoModel > parse(QString html);
+    QList< brpackagetracking::model::PackageInfoModel > parse(QString html);
 signals:
 public slots:
 private:
-    PackageInfoModel parseCheckpoint(QXmlStreamReader &xmlStreamReader);
+    brpackagetracking::model::PackageInfoModel parseCheckpoint(QXmlStreamReader &xmlStreamReader);
     void changeFromHtmlToXml(QString html);
     QString m_xml;
 };
+}
+}
 
 #endif // HTMLPARSER_H

@@ -1,5 +1,7 @@
 #include "downloadhtml.h"
 
+using namespace brpackagetracking::core;
+
 DownloadHtml::DownloadHtml(QObject *parent) :
     QObject(parent), m_accessManager(new QNetworkAccessManager(this)) {
     bool ok = connect(m_accessManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));

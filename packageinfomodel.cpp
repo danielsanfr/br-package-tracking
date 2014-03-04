@@ -1,5 +1,7 @@
 #include "packageinfomodel.h"
 
+using namespace brpackagetracking::model;
+
 PackageInfoModel::PackageInfoModel(QString date, QString location, QString situation, QObject *parent) :
     QObject(parent), m_date(""), m_location(""), m_situation("") {
     m_date = date;

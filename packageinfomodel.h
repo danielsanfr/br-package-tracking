@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QString>
 
+namespace brpackagetracking {
+namespace model {
 class PackageInfoModel : public QObject {
     Q_OBJECT
     Q_PROPERTY(QString date READ date WRITE setDate NOTIFY dateChanged FINAL)
@@ -30,5 +32,7 @@ private:
     QString m_location;
     QString m_situation;
 };
+}
+}
 
 #endif // PACKAGEINFOMODEL_H

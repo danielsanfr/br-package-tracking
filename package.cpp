@@ -1,5 +1,9 @@
 #include "package.h"
 
+using namespace brpackagetracking;
+using namespace brpackagetracking::core;
+using namespace brpackagetracking::model;
+
 Package::Package(QString code, QObject *parent) :
     QObject(parent), m_htmlParser(new HtmlParser(this)), m_downloadHtml(new DownloadHtml(this)) {
     m_validCode = false;

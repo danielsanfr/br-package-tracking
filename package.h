@@ -16,8 +16,8 @@
 #define POST_OFFICE_URL QString("http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_ITEMCODE=&P_LINGUA=001&P_TESTE=&P_TIPO=001&P_COD_UNI=")
 #define POST_OFFICE_URL_M QString("http://websro.correios.com.br/sro_bin/txect01$.QueryList?P_LINGUA=001&P_TIPO=001&P_COD_UNI=")
 
-class Package : public QObject
-{
+namespace brpackagetracking {
+class Package : public QObject {
     Q_OBJECT
 public:
     enum CodeError {
@@ -39,9 +39,9 @@ public:
     QString serviceCode() const;
     QString countryName() const;
     QString countryAcronym() const;
-    QList< PackageInfoModel > checkpoints() const;
+    QList< brpackagetracking::model::PackageInfoModel > checkpoints() const;
 signals:
-    void loadCompleted(Package *package);
+    void loadCompleted(brpackagetracking::Package *package);
     void loadError(QString message);
 public slots:
 private slots:
@@ -58,9 +58,10 @@ private:
     QString m_serviceCode;
     QString m_countryName;
     QString m_countryAcronym;
-    HtmlParser *m_htmlParser;
-    DownloadHtml *m_downloadHtml;
-    QList< PackageInfoModel > m_checkpoints;
+    brpackagetracking::core::HtmlParser *m_htmlParser;
+    brpackagetracking::core::DownloadHtml *m_downloadHtml;
+    QList< brpackagetracking::model::PackageInfoModel > m_checkpoints;
 };
+}
 
 #endif // PACKAGE_H
