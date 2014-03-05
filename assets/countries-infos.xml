@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TABLE>
+<!-- <TR>
+  <Td align =center>Ord.</Td>
+  <TD align =center>Pais</TD>
+  <TD align =center>2 Letras</TD>
+  <TD align =center>3 Letras</TD>
+  <TD align =center>Cód.</TD>
+</TR> -->
+<TR>
+  <TH>1</TH>
+  <TD>Afeganistão</TD>
+  <TD>AF</TD>
+  <TD>AFG</TD>
+  <TD>004</TD>
+</TR>
+<TR>
+  <TH>2</TH>
+  <TD>áfrica do Sul</TD>
+  <TD>ZA</TD>
+  <TD>ZAF</TD>
+  <TD>710</TD>
+</TR>
+<TR>
+  <TH>3</TH>
+  <TD>Albânia</TD>
+  <TD>AL</TD>
+  <TD>ALB</TD>
+  <TD>008</TD>
+</TR>
+<TR>
+  <TH>4</TH>
+  <TD>Alemanha</TD>
+  <TD>DE</TD>
+  <TD>DEU</TD>
+  <TD>276</TD>
+</TR>
+
+<TR>
+  <TH>5</TH>
+  <TD>Andorra</TD>
+  <TD>AD</TD>
+  <TD>AND</TD>
+  <TD>020</TD>
+</TR>
+<TR>
+  <TH>6</TH>
+  <TD>Angola</TD>
+  <TD>AO</TD>
+  <TD>AGO</TD>
+  <TD>024</TD>
+</TR>
+<TR>
+  <TH>7</TH>
+  <TD>Anguilla</TD>
+  <TD>AI</TD>
+  <TD>AIA</TD>
+  <TD>660</TD>
+</TR>
+<TR>
+  <TH>8</TH>
+  <TD>Antártida</TD>
+  <TD>AQ</TD>
+  <TD>ATA</TD>
+  <TD>010</TD>
+</TR>
+<TR>
+  <TH>9</TH>
+  <TD>Antígua e Barbuda</TD>
+  <TD>AG</TD>
+  <TD>ATG</TD>
+  <TD>028</TD>
+</TR>
+<TR>
+  <TH>10</TH>
+  <TD>Antilhas Holandesas</TD>
+  <TD>AN</TD>
+  <TD>ANT</TD>
+  <TD>530</TD>
+</TR>
+<TR>
+  <TH>11</TH>
+  <TD>Arábia Saudita</TD>
+  <TD>SA</TD>
+  <TD>SAU</TD>
+  <TD>682</TD>
+</TR>
+<TR>
+  <TH>12</TH>
+  <TD>Argélia</TD>
+  <TD>DZ</TD>
+  <TD>DZA</TD>
+  <TD>012</TD>
+</TR>
+<TR>
+  <TH>13</TH>
+  <TD>Argentina</TD>
+  <TD>AR</TD>
+  <TD>ARG</TD>
+  <TD>032</TD>
+</TR>
+<TR>
+  <TH>14</TH>
+  <TD>Armênia</TD>
+  <TD>AM</TD>
+  <TD>ARM</TD>
+  <TD>51</TD>
+</TR>
+<TR>
+  <TH>15</TH>
+  <TD>Aruba</TD>
+  <TD>AW</TD>
+  <TD>ABW</TD>
+  <TD>533</TD>
+</TR>
+<TR>
+  <TH>16</TH>
+  <TD>Austrália</TD>
+  <TD>AU</TD>
+  <TD>AUS</TD>
+  <TD>036</TD>
+</TR>
+<TR>
+  <TH>17</TH>
+  <TD>áustria</TD>
+  <TD>AT</TD>
+  <TD>AUT</TD>
+  <TD>040</TD>
+</TR>
+<TR>
+  <TH>18</TH>
+  <TD>Azerbaijão</TD>
+  <TD>AZ  </TD>
+  <TD>AZE</TD>
+  <TD>31</TD>
+</TR>
+<TR>
+  <TH>19</TH>
+  <TD>Bahamas</TD>
+  <TD>BS</TD>
+  <TD>BHS</TD>
+  <TD>044</TD>
+</TR>
+<TR>
+  <TH>20</TH>
+  <TD>Bahrein</TD>
+  <TD>BH</TD>
+  <TD>BHR</TD>
+  <TD>048</TD>
+</TR>
+<TR>
+  <TH>21</TH>
+  <TD>Bangladesh</TD>
+  <TD>BD</TD>
+  <TD>BGD</TD>
+  <TD>050</TD>
+</TR>
+<TR>
+  <TH>22</TH>
+  <TD>Barbados</TD>
+  <TD>BB</TD>
+  <TD>BRB</TD>
+  <TD>052</TD>
+</TR>
+<TR>
+  <TH>23</TH>
+  <TD>Belarus</TD>
+  <TD>BY</TD>
+  <TD>BLR</TD>
+  <TD>112</TD>
+</TR>
+<TR>
+  <TH>24</TH>
+  <TD>Bélgica</TD>
+  <TD>BE</TD>
+  <TD>BEL</TD>
+  <TD>056</TD>
+</TR>
+<TR>
+  <TH>25</TH>
+  <TD>Belize</TD>
+  <TD>BZ</TD>
+  <TD>BLZ</TD>
+  <TD>084</TD>
+</TR>
+<TR>
+  <TH>26</TH>
+  <TD>Benin</TD>
+  <TD>BJ</TD>
+  <TD>BEN</TD>
+  <TD>204</TD>
+</TR>
+<TR>
+  <TH>27</TH>
+  <TD>Bermudas</TD>
+  <TD>BM</TD>
+  <TD>BMU</TD>
+  <TD>060</TD>
+</TR>
+<TR>
+  <TH>28</TH>
+  <TD>Bolívia</TD>
+  <TD>BO</TD>
+  <TD>BOL</TD>
+  <TD>068</TD>
+</TR>
+<TR>
+  <TH>29</TH>
+  <TD>Bósnia-Herzegóvina</TD>
+  <TD>BA</TD>
+  <TD>BIH</TD>
+  <TD>070</TD>
+</TR>
+<TR>
+  <TH>30</TH>
+  <TD>Botsuana</TD>
+  <TD>BW</TD>
+  <TD>BWA</TD>
+  <TD>072</TD>
+</TR>
+<TR>
+  <TH>31</TH>
+  <TD>Brasil</TD>
+  <TD>BR</TD>
+  <TD>BRA</TD>
+  <TD>076</TD>
+</TR>
+<TR>
+  <TH>32</TH>
+  <TD>Brunei</TD>
+  <TD>BN</TD>
+  <TD>BRN</TD>
+  <TD>096</TD>
+</TR>
+<TR>
+  <TH>33</TH>
+  <TD>Bulgária</TD>
+  <TD>BG</TD>
+  <TD>BGR</TD>
+  <TD>100</TD>
+</TR>
+<TR>
+  <TH>34</TH>
+  <TD>Burkina Fasso</TD>
+  <TD>BF</TD>
+  <TD>BFA</TD>
+  <TD>854</TD>
+</TR>
+<TR>
+  <TH>35</TH>
+  <TD>Burundi</TD>
+  <TD>BI</TD>
+  <TD>BDI</TD>
+  <TD>108</TD>
+</TR>
+<TR>
+  <TH>36</TH>
+  <TD>Butão</TD>
+  <TD>BT</TD>
+  <TD>BTN</TD>
+  <TD>064</TD>
+</TR>
+<TR>
+  <TH>37</TH>
+  <TD>Cabo Verde</TD>
+  <TD>CV</TD>
+  <TD>CPV</TD>
+  <TD>132</TD></TR>
+<TR>
+  <TH>38</TH>
+  <TD>Camarões</TD>
+  <TD>CM</TD>
+  <TD>CMR</TD>
+  <TD>120</TD>
+</TR>
+<TR>
+  <TH>39</TH>
+  <TD>Camboja</TD>
+  <TD>KH</TD>
+  <TD>KHM</TD>
+  <TD>116</TD>
+</TR>
+<TR>
+  <TH>40</TH>
+  <TD>Canadá</TD>
+  <TD>CA</TD>
+  <TD>CAN</TD>
+  <TD>124</TD>
+</TR>
+<TR>
+  <TH>41</TH>
+  <TD>Cazaquistão</TD>
+  <TD>KZ</TD>
+  <TD>KAZ</TD>
+  <TD>398</TD>
+</TR>
+<TR>
+  <TH>42</TH>
+  <TD>Chade</TD>
+  <TD>TD</TD>
+  <TD>TCD</TD>
+  <TD>148</TD>
+</TR>
+<TR>
+  <TH>43</TH>
+  <TD>Chile</TD>
+  <TD>CL</TD>
+  <TD>CHL</TD>
+  <TD>152</TD>
+</TR>
+<TR>
+  <TH>44</TH>
+  <TD>China</TD>
+  <TD>CN</TD>
+  <TD>CHN</TD>
+  <TD>156</TD>
+</TR>
+<TR>
+  <TH>45</TH>
+  <TD>Chipre</TD>
+  <TD>CY</TD>
+  <TD>CYP</TD>
+  <TD>196</TD>
+</TR>
+<TR>
+  <TH>46</TH>
+  <TD>Cingapura</TD>
+  <TD>SG</TD>
+  <TD>SGP</TD>
+  <TD>702</TD>
+</TR>
+<TR>
+  <TH>47</TH>
+  <TD>Colômbia</TD>
+  <TD>CO</TD>
+  <TD>COL</TD>
+  <TD>170</TD>
+</TR>
+<TR>
+  <TH>48</TH>
+  <TD>Congo</TD>
+  <TD>CG</TD>
+  <TD>COG</TD>
+  <TD>178</TD>
+</TR>
+<TR>
+  <TH>49</TH>
+  <TD>Coréia do Norte</TD>
+  <TD>KP</TD>
+  <TD>PRK</TD>
+  <TD>408</TD>
+</TR>
+<TR>
+  <TH>50</TH>
+  <TD>Coréia do Sul</TD>
+  <TD>KR</TD>
+  <TD>KOR</TD>
+  <TD>410</TD>
+</TR>
+<TR>
+  <TH>51</TH>
+  <TD>Costa do Marfim</TD>
+  <TD>CI</TD>
+  <TD>CIV</TD>
+  <TD>384</TD>
+</TR>
+<TR>
+  <TH>52</TH>
+  <TD>Costa Rica</TD>
+  <TD>CR</TD>
+  <TD>CRI</TD>
+  <TD>188</TD>
+</TR>
+<TR>
+  <TH>53</TH>
+  <TD>Croácia (Hrvatska)</TD>
+  <TD>HR</TD>
+  <TD>HRV</TD>
+  <TD>191</TD>
+</TR>
+<TR>
+  <TH>54</TH>
+  <TD>Cuba</TD>
+  <TD>CU</TD>
+  <TD>CUB</TD>
+  <TD>192</TD>
+</TR>
+<TR>
+  <TH>55</TH>
+  <TD>Dinamarca</TD>
+  <TD>DK</TD>
+  <TD>DNK</TD>
+  <TD>208</TD>
+</TR>
+<TR>
+  <TH>56</TH>
+  <TD>Djibuti</TD>
+  <TD>DJ</TD>
+  <TD>DJI</TD>
+  <TD>262</TD>
+</TR>
+<TR>
+  <TH>57</TH>
+  <TD>Dominica</TD>
+  <TD>DM</TD>
+  <TD>DMA</TD>
+  <TD>212</TD>
+</TR>
+<TR>
+  <TH>58</TH>
+  <TD>Egito</TD>
+  <TD>EG</TD>
+  <TD>EGY</TD>
+  <TD>818</TD>
+</TR>
+<TR>
+  <TH>59</TH>
+  <TD>El Salvador</TD>
+  <TD>SV</TD>
+  <TD>SLV</TD>
+  <TD>222</TD>
+</TR>
+<TR>
+  <TH>60</TH>
+  <TD>Emirados árabes Unidos</TD>
+  <TD>AE</TD>
+  <TD>ARE</TD>
+  <TD>784</TD>
+</TR>
+<TR>
+  <TH>61</TH>
+  <TD>Equador</TD>
+  <TD>EC</TD>
+  <TD>ECU</TD>
+  <TD>218</TD>
+</TR>
+<TR>
+  <TH>62</TH>
+  <TD>Eritréia</TD>
+  <TD>ER</TD>
+  <TD>ERI</TD>
+  <TD>232</TD>
+</TR>
+<TR>
+  <TH>63</TH>
+  <TD>Eslováquia</TD>
+  <TD>SK</TD>
+  <TD>SVK</TD>
+  <TD>703</TD>
+</TR>
+<TR>
+  <TH>64</TH>
+  <TD>Eslovênia</TD>
+  <TD>SI</TD>
+  <TD>SVN</TD>
+  <TD>705</TD>
+</TR>
+<TR>
+  <TH>65</TH>
+  <TD>Espanha</TD>
+  <TD>ES</TD>
+  <TD>ESP</TD>
+  <TD>724</TD>
+</TR>
+<TR>
+  <TH>66</TH>
+  <TD>Estados Unidos</TD>
+  <TD>US</TD>
+  <TD>USA</TD>
+  <TD>840</TD>
+</TR>
+<TR>
+  <TH>67</TH>
+  <TD>Estônia</TD>
+  <TD>EE</TD>
+  <TD>EST</TD>
+  <TD>233</TD>
+</TR>
+<TR>
+  <TH>68</TH>
+  <TD>Etiópia</TD>
+  <TD>ET</TD>
+  <TD>ETH</TD>
+  <TD>231</TD>
+</TR>
+
+<TR>
+  <TH>69</TH>
+  <TD>Fiji</TD>
+  <TD>FJ</TD>
+  <TD>FJI</TD>
+  <TD>242</TD>
+</TR>
+<TR>
+  <TH>70</TH>
+  <TD>Filipinas</TD>
+  <TD>PH</TD>
+  <TD>PHL</TD>
+  <TD>608</TD>
+</TR>
+<TR>
+  <TH>71</TH>
+  <TD>Finlândia</TD>
+  <TD>FI</TD>
+  <TD>FIN</TD>
+  <TD>246</TD>
+</TR>
+<TR>
+  <TH>72</TH>
+  <TD>França</TD>
+  <TD>FR</TD>
+  <TD>FRA</TD>
+  <TD>250</TD>
+</TR>
+<TR>
+  <TH>73</TH>
+  <TD>Gabão</TD>
+  <TD>GA</TD>
+  <TD>GAB</TD>
+  <TD>266</TD>
+</TR>
+<TR>
+  <TH>74</TH>
+  <TD>Gâmbia</TD>
+  <TD>GM</TD>
+  <TD>GMB</TD>
+  <TD>270</TD>
+</TR>
+<TR>
+  <TH>75</TH>
+  <TD>Gana</TD>
+  <TD>GH</TD>
+  <TD>GHA</TD>
+  <TD>288</TD>
+</TR>
+<TR>
+  <TH>76</TH>
+  <TD>Geórgia</TD>
+  <TD>GE</TD>
+  <TD>GEO</TD>
+  <TD>268</TD>
+</TR>
+<TR>
+  <TH>77</TH>
+  <TD>Gibraltar</TD>
+  <TD>GI</TD>
+  <TD>GIB</TD>
+  <TD>292</TD>
+</TR>
+<TR>
+  <TH>78</TH>
+  <TD>Grã-Bretanha (Reino Unido, UK)</TD>
+  <TD>GB</TD>
+  <TD>GBR</TD>
+  <TD>826</TD>
+</TR>
+<TR>
+  <TH>79</TH>
+  <TD>Granada</TD>
+  <TD>GD</TD>
+  <TD>GRD</TD>
+  <TD>308</TD>
+</TR>
+<TR>
+  <TH>80</TH>
+  <TD>Grécia</TD>
+  <TD>GR</TD>
+  <TD>GRC</TD>
+  <TD>300</TD>
+</TR>
+<TR>
+  <TH>81</TH>
+  <TD>Groelândia</TD>
+  <TD>GL</TD>
+  <TD>GRL</TD>
+  <TD>304</TD>
+</TR>
+<TR>
+  <TH>82</TH>
+  <TD>Guadalupe</TD>
+  <TD>GP</TD>
+  <TD>GLP</TD>
+  <TD>312</TD>
+</TR>
+<TR>
+  <TH>83</TH>
+  <TD>Guam (Território dos Estados Unidos)</TD>
+  <TD>GU</TD>
+  <TD>GUM</TD>
+  <TD>316</TD>
+</TR>
+<TR>
+  <TH>84</TH>
+  <TD>Guatemala</TD>
+  <TD>GT</TD>
+  <TD>GTM</TD>
+  <TD>320</TD>
+</TR>
+<TR>
+  <TH>85</TH>
+  <TD>Guernsey</TD>
+  <TD>G</TD>
+  <TD>GGY</TD>
+  <TD>832</TD>
+</TR>
+<TR>
+  <TH>86</TH>
+  <TD>Guiana</TD>
+  <TD>GY</TD>
+  <TD>GUY</TD>
+  <TD>328</TD>
+</TR>
+<TR>
+  <TH>87</TH>
+  <TD>Guiana Francesa</TD>
+  <TD>GF</TD>
+  <TD>GUF</TD>
+  <TD>254</TD>
+</TR>
+<TR>
+  <TH>88</TH>
+  <TD>Guiné</TD>
+  <TD>GN</TD>
+  <TD>GIN</TD>
+  <TD>324</TD>
+</TR>
+<TR>
+  <TH>89</TH>
+  <TD>Guiné Equatorial</TD>
+  <TD>GQ</TD>
+  <TD>GNQ</TD>
+  <TD>226</TD>
+</TR>
+<TR>
+  <TH>90</TH>
+  <TD>Guiné-Bissau</TD>
+  <TD>GW</TD>
+  <TD>GNB</TD>
+  <TD>624</TD>
+</TR>
+<TR>
+  <TH>91</TH>
+  <TD>Haiti</TD>
+  <TD>HT</TD>
+  <TD>HTI</TD>
+  <TD>332</TD>
+</TR>
+<TR>
+  <TH>92</TH>
+  <TD>Holanda</TD>
+  <TD>NL</TD>
+  <TD>NLD</TD>
+  <TD>528</TD>
+</TR>
+<TR>
+  <TH>93</TH>
+  <TD>Honduras</TD>
+  <TD>HN</TD>
+  <TD>HND</TD>
+  <TD>340</TD>
+</TR>
+<TR>
+  <TH>94</TH>
+  <TD>Hong Kong</TD>
+  <TD>HK</TD>
+  <TD>HKG</TD>
+  <TD>344</TD>
+</TR>
+<TR>
+  <TH>95</TH>
+  <TD>Hungria</TD>
+  <TD>HU</TD>
+  <TD>HUN</TD>
+  <TD>348</TD>
+</TR>
+<TR>
+  <TH>96</TH>
+  <TD>Iêmen</TD>
+  <TD>YE</TD>
+  <TD>YEM</TD>
+  <TD>887</TD>
+</TR>
+<TR>
+  <TH>97</TH>
+  <TD>Ilha Bouvet (Território da Noruega)</TD>
+  <TD>BV</TD>
+  <TD>BVT</TD>
+  <TD>074</TD>
+</TR>
+<TR>
+  <TH>98</TH>
+  <TD>Ilha do Homem</TD>
+  <TD>IM</TD>
+  <TD>IMN</TD>
+  <TD>833</TD>
+</TR>
+<TR>
+  <TH>99</TH>
+  <TD>Ilha Natal</TD>
+  <TD>CX</TD>
+  <TD>CXR</TD>
+  <TD>162</TD>
+</TR>
+<TR>
+  <TH>100</TH>
+  <TD>Ilha Pitcairn</TD>
+  <TD>PN</TD>
+  <TD>PCN</TD>
+  <TD>612</TD>
+</TR>
+<TR>
+  <TH>101</TH>
+  <TD>Ilha Reunião</TD>
+  <TD>RE</TD>
+  <TD>REU</TD>
+  <TD>638</TD>
+</TR>
+<TR>
+  <TH>102</TH>
+  <TD>Ilhas Aland</TD>
+  <TD>AX</TD>
+  <TD>ALA</TD>
+  <TD>248</TD>
+</TR>
+<TR>
+  <TH>103</TH>
+  <TD>Ilhas Cayman</TD>
+  <TD>KY</TD>
+  <TD>CYM</TD>
+  <TD>136</TD>
+</TR>
+<TR>
+  <TH>104</TH>
+  <TD>Ilhas Cocos</TD>
+  <TD>CC</TD>
+  <TD>CCK</TD>
+  <TD>166</TD>
+</TR>
+<TR>
+  <TH>105</TH>
+  <TD>Ilhas Comores</TD>
+  <TD>KM</TD>
+  <TD>COM</TD>
+  <TD>174</TD>
+</TR>
+<TR>
+  <TH>106</TH>
+  <TD>Ilhas Cook</TD>
+  <TD>CK</TD>
+  <TD>COK</TD>
+  <TD>184</TD>
+</TR>
+<TR>
+  <TH>107</TH>
+  <TD>Ilhas Faroes</TD>
+  <TD>FO</TD>
+  <TD>FRO</TD>
+  <TD>234</TD>
+</TR>
+<TR>
+  <TH>108</TH>
+  <TD>Ilhas Falkland (Malvinas)</TD>
+  <TD>FK</TD>
+  <TD>FLK</TD>
+  <TD>238</TD>
+</TR>
+<TR>
+  <TH>109</TH>
+  <TD>Ilhas Geórgia do Sul e Sandwich do Sul</TD>
+  <TD>GS</TD>
+  <TD>SGS</TD>
+  <TD>239</TD>
+</TR>
+<TR>
+  <TH>110</TH>
+  <TD>Ilhas Heard e McDonald (Território da Austrália)</TD>
+  <TD>HM</TD>
+  <TD>HMD</TD>
+  <TD>334</TD>
+</TR>
+<TR>
+  <TH>111</TH>
+  <TD>Ilhas Marianas do Norte</TD>
+  <TD>MP</TD>
+  <TD>MNP</TD>
+  <TD>580</TD>
+</TR>
+<TR>
+  <TH>112</TH>
+  <TD>Ilhas Marshall</TD>
+  <TD>MH</TD>
+  <TD>MHL</TD>
+  <TD>584</TD>
+</TR>
+<TR>
+  <TH>113</TH>
+  <TD>Ilhas Menores dos Estados Unidos</TD>
+  <TD>UM</TD>
+  <TD>UMI</TD>
+  <TD>581</TD>
+</TR>
+<TR>
+  <TH>114</TH>
+  <TD>Ilhas Norfolk</TD>
+  <TD>NF</TD>
+  <TD>NFK</TD>
+  <TD>574</TD>
+</TR>
+<TR>
+  <TH>115</TH>
+  <TD>Ilhas Seychelles</TD>
+  <TD>SC</TD>
+  <TD>SYC</TD>
+  <TD>690</TD>
+</TR>
+<TR>
+  <TH>116</TH>
+  <TD>Ilhas Solomão</TD>
+  <TD>SB</TD>
+  <TD>SLB</TD>
+  <TD>090</TD>
+</TR>
+<TR>
+  <TH>117</TH>
+  <TD>Ilhas Svalbard e Jan Mayen</TD>
+  <TD>SJ</TD>
+  <TD>SJM</TD>
+  <TD>744</TD>
+</TR>
+<TR>
+  <TH>118</TH>
+  <TD>Ilhas Tokelau</TD>
+  <TD>TK</TD>
+  <TD>TKL</TD>
+  <TD>772</TD>
+</TR>
+<TR>
+  <TH>119</TH>
+  <TD>Ilhas Turks e Caicos</TD>
+  <TD>TC</TD>
+  <TD>TCA</TD>
+  <TD>796</TD>
+</TR>
+<TR>
+  <TH>120</TH>
+  <TD>Ilhas Virgens (Estados Unidos)</TD>
+  <TD>VI</TD>
+  <TD>VIR</TD>
+  <TD>850</TD>
+</TR>
+<TR>
+  <TH>121</TH>
+  <TD>Ilhas Virgens (Inglaterra)</TD>
+  <TD>VG</TD>
+  <TD>VGB</TD>
+  <TD>092</TD>
+</TR>
+<TR>
+  <TH>122</TH>
+  <TD>Ilhas Wallis e Futuna</TD>
+  <TD>WF</TD>
+  <TD>WLF</TD>
+  <TD>876</TD>
+</TR>
+<TR>
+  <TH>123</TH>
+  <TD>índia</TD>
+  <TD>IN</TD>
+  <TD>IND</TD>
+  <TD>356</TD>
+</TR>
+<TR>
+  <TH>124</TH>
+  <TD>Indonésia</TD>
+  <TD>ID</TD>
+  <TD>IDN</TD>
+  <TD>360</TD>
+</TR>
+<TR>
+  <TH>125</TH>
+  <TD>Irã</TD>
+  <TD>IR</TD>
+  <TD>IRN</TD>
+  <TD>364</TD>
+</TR>
+<TR>
+  <TH>126</TH>
+  <TD>Iraque</TD>
+  <TD>IQ</TD>
+  <TD>IRQ</TD>
+  <TD>368</TD>
+</TR>
+<TR>
+  <TH>127</TH>
+  <TD>Irlanda</TD>
+  <TD>IE</TD>
+  <TD>IRL</TD>
+  <TD>372</TD>
+</TR>
+<TR>
+  <TH>128</TH>
+  <TD>Islândia</TD>
+  <TD>IS</TD>
+  <TD>ISL</TD>
+  <TD>352</TD>
+</TR>
+<TR>
+  <TH>129</TH>
+  <TD>Israel</TD>
+  <TD>IL</TD>
+  <TD>ISR</TD>
+  <TD>376</TD>
+</TR>
+<TR>
+  <TH>130</TH>
+  <TD>Itália</TD>
+  <TD>IT</TD>
+  <TD>ITA</TD>
+  <TD>380</TD>
+</TR>
+<TR>
+  <TH>131</TH>
+  <TD>Jamaica</TD>
+  <TD>JM</TD>
+  <TD>JAM</TD>
+  <TD>388</TD>
+</TR>
+<TR>
+  <TH>132</TH>
+  <TD>Japão</TD>
+  <TD>JP</TD>
+  <TD>JPN</TD>
+  <TD>392</TD>
+</TR>
+<TR>
+  <TH>133</TH>
+  <TD>Jersey</TD>
+  <TD>JE</TD>
+  <TD>JEY</TD>
+  <TD>832</TD>
+</TR>
+<TR>
+  <TH>134</TH>
+  <TD>Jordânia</TD>
+  <TD>JO</TD>
+  <TD>JOR</TD>
+  <TD>400</TD>
+</TR>
+<TR>
+  <TH>135</TH>
+  <TD>Kênia</TD>
+  <TD>KE</TD>
+  <TD>KEN</TD>
+  <TD>404</TD>
+</TR>
+<TR>
+  <TH>136</TH>
+  <TD>Kiribati</TD>
+  <TD>KI</TD>
+  <TD>KIR</TD>
+  <TD>296</TD>
+</TR>
+<TR>
+  <TH>137</TH>
+  <TD>Kuait</TD>
+  <TD>KW</TD>
+  <TD>KWT</TD>
+  <TD>414</TD>
+</TR>
+<TR>
+  <TH>138</TH>
+  <TD>Laos</TD>
+  <TD>LA</TD>
+  <TD>LAO</TD>
+  <TD>418</TD>
+</TR>
+<TR>
+  <TH>139</TH>
+  <TD>Látvia</TD>
+  <TD>LV</TD>
+  <TD>LVA</TD>
+  <TD>428</TD>
+</TR>
+<TR>
+  <TH>140</TH>
+  <TD>Lesoto</TD>
+  <TD>LS</TD>
+  <TD>LSO</TD>
+  <TD>426</TD>
+</TR>
+<TR>
+  <TH>141</TH>
+  <TD>Líbano</TD>
+  <TD>LB</TD>
+  <TD>LBN</TD>
+  <TD>422</TD>
+</TR>
+<TR>
+  <TH>142</TH>
+  <TD>Libéria</TD>
+  <TD>LR</TD>
+  <TD>LBR</TD>
+  <TD>430</TD>
+</TR>
+<TR>
+  <TH>143</TH>
+  <TD>Líbia</TD>
+  <TD>LY</TD>
+  <TD>LBY</TD>
+  <TD>434</TD>
+</TR>
+<TR>
+  <TH>144</TH>
+  <TD>Liechtenstein</TD>
+  <TD>LI</TD>
+  <TD>LIE</TD>
+  <TD>438</TD>
+</TR>
+<TR>
+  <TH>145</TH>
+  <TD>Lituânia</TD>
+  <TD>LT</TD>
+  <TD>LTU</TD>
+  <TD>440</TD>
+</TR>
+<TR>
+  <TH>146</TH>
+  <TD>Luxemburgo</TD>
+  <TD>LU</TD>
+  <TD>LUX</TD>
+  <TD>442</TD>
+</TR>
+<TR>
+  <TH>147</TH>
+  <TD>Macau</TD>
+  <TD>MO</TD>
+  <TD>MAC</TD>
+  <TD>446</TD>
+</TR>
+<TR>
+  <TH>148</TH>
+  <TD>Macedônia (República Yugoslava)</TD>
+  <TD>MK</TD>
+  <TD>MKD</TD>
+  <TD>807</TD>
+</TR>
+<TR>
+  <TH>149</TH>
+  <TD>Madagascar</TD>
+  <TD>MG</TD>
+  <TD>MDG</TD>
+  <TD>450</TD>
+</TR>
+<TR>
+  <TH>150</TH>
+  <TD>Malásia</TD>
+  <TD>MY</TD>
+  <TD>MYS</TD>
+  <TD>458</TD>
+</TR>
+<TR>
+  <TH>151</TH>
+  <TD>Malaui</TD>
+  <TD>MW</TD>
+  <TD>MWI</TD>
+  <TD>454</TD>
+</TR>
+<TR>
+  <TH>152</TH>
+  <TD>Maldivas</TD>
+  <TD>MV</TD>
+  <TD>MDV</TD>
+  <TD>462</TD>
+</TR>
+<TR>
+  <TH>153</TH>
+  <TD>Mali</TD>
+  <TD>ML</TD>
+  <TD>MLI</TD>
+  <TD>466</TD>
+</TR>
+<TR>
+  <TH>154</TH>
+  <TD>Malta</TD>
+  <TD>MT</TD>
+  <TD>MLT</TD>
+  <TD>470</TD>
+</TR>
+<TR>
+  <TH>155</TH>
+  <TD>Marrocos</TD>
+  <TD>MA</TD>
+  <TD>MAR</TD>
+  <TD>504</TD>
+</TR>
+<TR>
+  <TH>156</TH>
+  <TD>Martinica</TD>
+  <TD>MQ</TD>
+  <TD>MTQ</TD>
+  <TD>474</TD>
+</TR>
+<TR>
+  <TH>157</TH>
+  <TD>Maurício</TD>
+  <TD>MU</TD>
+  <TD>MUS</TD>
+  <TD>480</TD>
+</TR>
+<TR>
+  <TH>158</TH>
+  <TD>Mauritânia</TD>
+  <TD>MR</TD>
+  <TD>MRT</TD>
+  <TD>478</TD>
+</TR>
+<TR>
+  <TH>159</TH>
+  <TD>Mayotte</TD>
+  <TD>YT</TD>
+  <TD>MYT</TD>
+  <TD>175</TD>
+</TR>
+<TR>
+  <TH>160</TH>
+  <TD>México</TD>
+  <TD>MX</TD>
+  <TD>MEX</TD>
+  <TD>484</TD>
+</TR>
+<TR>
+  <TH>161</TH>
+  <TD>Micronésia</TD>
+  <TD>FM</TD>
+  <TD>FSM</TD>  <TD>583</TD>
+</TR>
+<TR>
+  <TH>162</TH>
+  <TD>Moçambique</TD>
+  <TD>MZ</TD>
+  <TD>MOZ</TD>
+  <TD>508</TD>
+</TR>
+<TR>
+  <TH>163</TH>
+  <TD>Moldova</TD>
+  <TD>MD</TD>
+  <TD>MDA</TD>
+  <TD>498</TD>
+</TR>
+<TR>
+  <TH>164</TH>
+  <TD>Mônaco</TD>
+  <TD>MC</TD>
+  <TD>MCO</TD>
+  <TD>492</TD>
+</TR>
+<TR>
+  <TH>165</TH>
+  <TD>Mongólia</TD>
+  <TD>MN</TD>
+  <TD>MNG</TD>
+  <TD>496</TD>
+</TR>
+<TR>
+  <TH>166</TH>
+  <TD>Montenegro</TD>
+  <TD>ME</TD>
+  <TD>MNE</TD>
+  <TD>499</TD>
+</TR>
+<TR>
+  <TH>167</TH>
+  <TD>Montserrat</TD>
+  <TD>MS</TD>
+  <TD>MSR</TD>
+  <TD>500</TD>
+</TR>
+<TR>
+  <TH>168</TH>
+  <TD>Myanma</TD>
+  <TD>MM</TD>
+  <TD>MMR</TD>
+  <TD>104</TD>
+</TR>
+<TR>
+  <TH>169</TH>
+  <TD>Namíbia</TD>
+  <TD>NA</TD>
+  <TD>NAM</TD>
+  <TD>516</TD>
+</TR>
+<TR>
+  <TH>170</TH>
+  <TD>Nauru</TD>
+  <TD>NR</TD>
+  <TD>NRU</TD>
+  <TD>520</TD>
+</TR>
+<TR>
+  <TH>171</TH>
+  <TD>Nepal</TD>
+  <TD>NP</TD>
+  <TD>NPL</TD>
+  <TD>524</TD>
+</TR>
+<TR>
+  <TH>172</TH>
+  <TD>Nicarágua</TD>
+  <TD>NI</TD>
+  <TD>NIC</TD>
+  <TD>558</TD>
+</TR>
+<TR>
+  <TH>173</TH>
+  <TD>Níger</TD>
+  <TD>NE</TD>
+  <TD>NER</TD>
+  <TD>562</TD>
+</TR>
+<TR>
+  <TH>174</TH>
+  <TD>Nigéria</TD>
+  <TD>NG</TD>
+  <TD>NGA</TD>
+  <TD>566</TD>
+</TR>
+<TR>
+  <TH>175</TH>
+  <TD>Niue</TD>
+  <TD>NU</TD>
+  <TD>NIU</TD>
+  <TD>570</TD>
+</TR>
+<TR>
+  <TH>176</TH>
+  <TD>Noruega</TD>
+  <TD>NO</TD>
+  <TD>NOR</TD>
+  <TD>578</TD>
+</TR>
+<TR>
+  <TH>177</TH>
+  <TD>Nova Caledônia</TD>
+  <TD>NC</TD>
+  <TD>NCL</TD>
+  <TD>540</TD>
+</TR>
+<TR>
+  <TH>178</TH>
+  <TD>Nova Zelândia</TD>
+  <TD>NZ</TD>
+  <TD>NZL</TD>
+  <TD>554</TD>
+</TR>
+<TR>
+  <TH>179</TH>
+  <TD>Omã</TD>
+  <TD>OM</TD>
+  <TD>OMN</TD>
+  <TD>512</TD>
+</TR>
+<TR>
+  <TH>180</TH>
+  <TD>Palau</TD>
+  <TD>PW</TD>
+  <TD>PLW</TD>
+  <TD>585</TD>
+</TR>
+<TR>
+  <TH>181</TH>
+  <TD>Panamá</TD>
+  <TD>PA</TD>
+  <TD>PAN</TD>
+  <TD>591</TD>
+</TR>
+<TR>
+  <TH>182</TH>
+  <TD>Papua-Nova Guiné</TD>
+  <TD>PG</TD>
+  <TD>PNG</TD>
+  <TD>598</TD>
+</TR>
+<TR>
+  <TH>183</TH>
+  <TD>Paquistão</TD>
+  <TD>PK</TD>
+  <TD>PAK</TD>
+  <TD>586</TD>
+</TR>
+<TR>
+  <TH>184</TH>
+  <TD>Paraguai</TD>
+  <TD>PY</TD>
+  <TD>PRY</TD>
+  <TD>600</TD>
+</TR>
+<TR>
+  <TH>185</TH>
+  <TD>Peru</TD>
+  <TD>PE</TD>
+  <TD>PER</TD>
+  <TD>604</TD>
+</TR>
+<TR>
+  <TH>186</TH>
+  <TD>Polinésia Francesa</TD>
+  <TD>PF</TD>
+  <TD>PYF</TD>
+  <TD>258</TD>
+</TR>
+<TR>
+  <TH>187</TH>
+  <TD>Polônia</TD>
+  <TD>PL</TD>
+  <TD>POL</TD>
+  <TD>616</TD>
+</TR>
+<TR>
+  <TH>188</TH>
+  <TD>Porto Rico</TD>
+  <TD>PR</TD>
+  <TD>PRI</TD>
+  <TD>630</TD>
+</TR>
+<TR>
+  <TH>189</TH>
+  <TD>Portugal</TD>
+  <TD>PT</TD>
+  <TD>PRT</TD>
+  <TD>620</TD>
+</TR>
+<TR>
+  <TH>190</TH>
+  <TD>Qatar</TD>
+  <TD>QA</TD>
+  <TD>QAT</TD>
+  <TD>634</TD>
+</TR>
+<TR>
+  <TH>191</TH>
+  <TD>Quirguistão</TD>
+  <TD>KG</TD>
+  <TD>KGZ</TD>
+  <TD>417</TD>
+</TR>
+<TR>
+  <TH>192</TH>
+  <TD>República Centro-Africana</TD>
+  <TD>CF</TD>
+  <TD>CAF</TD>
+  <TD>140</TD>
+</TR>
+<TR>
+  <TH>193</TH>
+  <TD>República Democrática do Congo</TD>
+  <TD>CD</TD>
+  <TD>COD</TD>
+  <TD>180</TD>
+</TR>
+<TR>
+  <TH>194</TH>
+  <TD>República Dominicana</TD>
+  <TD>DO</TD>
+  <TD>DOM</TD>
+  <TD>214</TD>
+</TR>
+<TR>
+  <TH>195</TH>
+  <TD>República Tcheca</TD>
+  <TD>CZ</TD>
+  <TD>CZE</TD>
+  <TD>203</TD>
+</TR>
+<TR>
+  <TH>196</TH>
+  <TD>Romênia</TD>
+  <TD>RO</TD>
+  <TD>ROM</TD>
+  <TD>642</TD>
+</TR>
+<TR>
+  <TH>197</TH>
+  <TD>Ruanda</TD>
+  <TD>RW</TD>
+  <TD>RWA</TD>
+  <TD>646</TD>
+</TR>
+<TR>
+  <TH>198</TH>
+  <TD>Rússia (antiga URSS) - Federação Russa</TD>
+  <TD>RU</TD>
+  <TD>RUS</TD>
+  <TD>643</TD>
+</TR>
+<TR>
+  <TH>199</TH>
+  <TD>Saara Ocidental</TD>
+  <TD>EH</TD>
+  <TD>ESH</TD>
+  <TD>732</TD>
+</TR>
+<TR>
+  <TH>200</TH>
+  <TD>Saint Vincente e Granadinas</TD>
+  <TD>VC</TD>
+  <TD>VCT</TD>
+  <TD>670</TD>
+</TR>
+<TR>
+  <TH>201</TH>
+  <TD>Samoa Ocidental</TD>
+  <TD>AS</TD>
+  <TD>ASM</TD>
+  <TD>016</TD>
+</TR>
+<TR>
+  <TH>202</TH>
+  <TD>Samoa Ocidental</TD>
+  <TD>WS</TD>
+  <TD>WSM</TD>
+  <TD>882</TD>
+</TR>
+<TR>
+  <TH>203</TH>
+  <TD>San Marino</TD>
+  <TD>SM</TD>
+  <TD>SMR</TD>
+  <TD>674</TD>
+</TR>
+<TR>
+  <TH>204</TH>
+  <TD>Santa Helena</TD>
+  <TD>SH</TD>
+  <TD>SHN</TD>
+  <TD>654</TD>
+</TR>
+<TR>
+  <TH>205</TH>
+  <TD>Santa Lúcia</TD>
+  <TD>LC</TD>
+  <TD>LCA</TD>
+  <TD>662</TD>
+</TR>
+<TR>
+  <TH>206</TH>
+  <TD>São Bartolomeu</TD>
+  <TD>BL</TD>
+  <TD>BLM</TD>
+  <TD>652</TD>
+</TR>
+<TR>
+  <TH>207</TH>
+  <TD>São Cristóvão e Névis</TD>
+  <TD>KN</TD>
+  <TD>KNA</TD>
+  <TD>659</TD>
+</TR>
+<TR>
+  <TH>208</TH>
+  <TD>São Martim</TD>
+  <TD>MF</TD>
+  <TD>MAF</TD>
+  <TD>663</TD>
+</TR>
+<TR>
+  <TH>209</TH>
+  <TD>São Tomé e Príncipe</TD>
+  <TD>ST</TD>
+  <TD>STP</TD>
+  <TD>678</TD>
+</TR>
+<TR>
+  <TH>210</TH>
+  <TD>Senegal</TD>
+  <TD>SN</TD>
+  <TD>SEN</TD>
+  <TD>686</TD>
+</TR>
+<TR>
+  <TH>211</TH>
+  <TD>Serra Leoa</TD>
+  <TD>SL</TD>
+  <TD>SLE</TD>
+  <TD>694</TD>
+</TR>
+<TR>
+  <TH>212</TH>
+  <TD>Sérvia</TD>
+  <TD>RS</TD>
+  <TD>SRB</TD>
+  <TD>688</TD>
+</TR>
+<TR>
+  <TH>213</TH>
+  <TD>Síria</TD>
+  <TD>SY</TD>
+  <TD>SYR</TD>
+  <TD>760</TD>
+</TR>
+<TR>
+  <TH>214</TH>
+  <TD>Somália</TD>
+  <TD>SO</TD>
+  <TD>SOM</TD>
+  <TD>706</TD>
+</TR>
+<TR>
+  <TH>215</TH>
+  <TD>Sri Lanka</TD>
+  <TD>LK</TD>
+  <TD>LKA</TD>
+  <TD>144</TD>
+</TR>
+<TR>
+  <TH>216</TH>
+  <TD>St. Pierre and Miquelon</TD>
+  <TD>PM</TD>
+  <TD>SPM</TD>
+  <TD>666</TD>
+</TR>
+<TR>
+  <TH>217</TH>
+  <TD>Suazilândia</TD>
+  <TD>SZ</TD>
+  <TD>SWZ</TD>
+  <TD>748</TD>
+</TR>
+<TR>
+  <TH>218</TH>
+  <TD>Sudão</TD>
+  <TD>SD</TD>
+  <TD>SDN</TD>
+  <TD>736</TD>
+</TR>
+<TR>
+  <TH>219</TH>
+  <TD>Suécia</TD>
+  <TD>SE</TD>
+  <TD>SWE</TD>
+  <TD>752</TD>
+</TR>
+<TR>
+  <TH>220</TH>
+  <TD>Suíça</TD>
+  <TD>CH</TD>
+  <TD>CHE</TD>
+  <TD>756</TD>
+</TR>
+<TR>
+  <TH>221</TH>
+  <TD>Suriname</TD>
+  <TD>SR</TD>
+  <TD>SUR</TD>
+  <TD>740</TD>
+</TR>
+<TR>
+  <TH>222</TH>
+  <TD>Tadjiquistão</TD>
+  <TD>TJ</TD>
+  <TD>TJK</TD>
+  <TD>762</TD>
+</TR>
+<TR>
+  <TH>223</TH>
+  <TD>Tailândia</TD>
+  <TD>TH</TD>
+  <TD>THA</TD>
+  <TD>764</TD>
+</TR>
+<TR>
+  <TH>224</TH>
+  <TD>Taiwan</TD>
+  <TD>TW</TD>
+  <TD>TWN</TD>
+  <TD>158</TD>
+</TR>
+<TR>
+  <TH>225</TH>
+  <TD>Tanzânia</TD>
+  <TD>TZ</TD>
+  <TD>TZA</TD>
+  <TD>834</TD>
+</TR>
+<TR>
+  <TH>226</TH>
+  <TD>Território Britânico do Oceano índico</TD>
+  <TD>IO</TD>
+  <TD>IOT</TD>
+  <TD>086</TD>
+</TR>
+<TR>
+  <TH>227</TH>
+  <TD>Territórios do Sul da França</TD>
+  <TD>TF</TD>
+  <TD>ATF</TD>
+  <TD>260</TD>
+</TR>
+<TR>
+  <TH>228</TH>
+  <TD>Territórios Palestinos Ocupados</TD>
+  <TD>PS</TD>
+  <TD>PSE</TD>
+  <TD>275</TD>
+</TR>
+<TR>
+  <TH>229</TH>
+  <TD>Timor Leste</TD>
+  <TD>TP</TD>
+  <TD>TMP</TD>
+  <TD>626</TD>
+</TR>
+<TR>
+  <TH>230</TH>
+  <TD>Togo</TD>
+  <TD>TG</TD>
+  <TD>TGO</TD>
+  <TD>768</TD>
+</TR>
+<TR>
+  <TH>231</TH>
+  <TD>Tonga</TD>
+  <TD>TO</TD>
+  <TD>TON</TD>
+  <TD>776</TD>
+</TR>
+<TR>
+  <TH>232</TH>
+  <TD>Trinidad and Tobago</TD>
+  <TD>TT</TD>
+  <TD>TTO</TD>
+  <TD>780</TD>
+</TR>
+<TR>
+  <TH>233</TH>
+  <TD>Tunísia</TD>
+  <TD>TN</TD>
+  <TD>TUN</TD>
+  <TD>788</TD>
+</TR>
+<TR>
+  <TH>234</TH>
+  <TD>Turcomenistão</TD>
+  <TD>TM</TD>
+  <TD>TKM</TD>
+  <TD>795</TD>
+</TR>
+<TR>
+  <TH>235</TH>
+  <TD>Turquia</TD>
+  <TD>TR</TD>
+  <TD>TUR</TD>
+  <TD>792</TD>
+</TR>
+<TR>
+  <TH>236</TH>
+  <TD>Tuvalu</TD>
+  <TD>TV</TD>
+  <TD>TUV</TD>
+  <TD>798</TD>
+</TR>
+<TR>
+  <TH>237</TH>
+  <TD>Ucrânia</TD>
+  <TD>UA</TD>
+  <TD>UKR</TD>
+  <TD>804</TD>
+</TR>
+<TR>
+  <TH>238</TH>
+  <TD>Uganda</TD>
+  <TD>UG</TD>
+  <TD>UGA</TD>
+  <TD>800</TD>
+</TR>
+<TR>
+  <TH>239</TH>
+  <TD>Uruguai</TD>
+  <TD>UY</TD>
+  <TD>URY</TD>
+  <TD>858</TD>
+</TR>
+<TR>
+  <TH>240</TH>
+  <TD>Uzbequistão</TD>
+  <TD>UZ</TD>
+  <TD>UZB</TD>
+  <TD>860</TD>
+</TR>
+<TR>
+  <TH>241</TH>
+  <TD>Vanuatu</TD>
+  <TD>VU</TD>
+  <TD>VUT</TD>
+  <TD>548</TD>
+</TR>
+<TR>
+  <TH>242</TH>
+  <TD>Vaticano</TD>
+  <TD>VA</TD>
+  <TD>VAT</TD>
+  <TD>336</TD>
+</TR>
+<TR>
+  <TH>243</TH>
+  <TD>Venezuela</TD>
+  <TD>VE</TD>
+  <TD>VEN</TD>
+  <TD>862</TD>
+</TR>
+<TR>
+  <TH>244</TH>
+  <TD>Vietnã</TD>
+  <TD>VN</TD>
+  <TD>VNM</TD>
+  <TD>704</TD>
+</TR>
+<TR>
+  <TH>245</TH>
+  <TD>Zâmbia</TD>
+  <TD>ZM</TD>
+  <TD>ZMB</TD>
+  <TD>894</TD>
+</TR>
+<TR>
+  <TH>246</TH>
+  <TD>Zimbábue</TD>
+  <TD>ZW</TD>
+  <TD>ZWE</TD>
+  <TD>716</TD>
+</TR>
+</TABLE>

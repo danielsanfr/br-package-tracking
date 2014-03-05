@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+<tr>
+<td>AL</td>
+<td>AGENTES DE LEITURA</td>
+</tr>
+<tr>
+<td>AR</td>
+<td>AVISO DE RECEBIMENTO</td>
+</tr>
+<tr>
+<td>AS</td>
+<td>ENCOMENDA PAC AÇÃO SOCIAL</td>
+</tr>
+<tr>
+<td>CA</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CB</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>COLIS POSTAUX</td>
+</tr>
+<tr>
+<td>CD</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CE</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CF</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CG</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CH</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CI</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CJ</td>
+<td>REGISTRADO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CK</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CL</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CM</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CN</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CO</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CP</td>
+<td>COLIS POSTAUX</td>
+</tr>
+<tr>
+<td>CQ</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>CARTA REGISTRADA SEM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CT</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CU</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CV</td>
+<td>REGISTRADO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CW</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CX</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CY</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>CZ</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>DA</td>
+<td>REM EXPRES COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>DB</td>
+<td>REM EXPRES COM AR DIGITAL BRADESCO</td>
+</tr>
+<tr>
+<td>DC</td>
+<td>REM EXPRESSA CRLV/CRV/CNH e NOTIFICAÇÃO</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>DEVOLUÇÃO DE DOCUMENTOS</td>
+</tr>
+<tr>
+<td>DE</td>
+<td>REMESSA EXPRESSA TALÃO E CARTÃO C/ AR</td>
+</tr>
+<tr>
+<td>DF</td>
+<td>E-SEDEX (ÓGICO) </td>
+</tr>
+<tr>
+<td>DI</td>
+<td>REM EXPRES COM AR DIGITAL ITAU</td>
+</tr>
+<tr>
+<td>DL</td>
+<td>ENCOMENDA SEDEX (LÓGICO) </td>
+</tr>
+<tr>
+<td>DP</td>
+<td>REM EXPRES COM AR DIGITAL PRF</td>
+</tr>
+<tr>
+<td>DS</td>
+<td>REM EXPRES COM AR DIGITAL SANTANDER</td>
+</tr>
+<tr>
+<td>DT</td>
+<td>REMESSA ECON.SEG.TRANSITO C/AR DIGITAL</td>
+</tr>
+<tr>
+<td>DX</td>
+<td>ENCOMENDA SEDEX 10 (LÓGICO) </td>
+</tr>
+<tr>
+<td>EA</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EB</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EC</td>
+<td>ENCOMENDA PAC</td>
+</tr>
+<tr>
+<td>ED</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EE</td>
+<td>SEDEX INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EF</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EG</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EH</td>
+<td>ENCOMENDA NORMAL COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>EI</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EJ</td>
+<td>ENCOMENDA INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EK</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EL</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EM</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EN</td>
+<td>ENCOMENDA NORMAL NACIONAL</td>
+</tr>
+<tr>
+<td>EO</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EP</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EQ</td>
+<td>ENCOMENDA SERVIÇO NÃO EXPRESSA ECT</td>
+</tr>
+<tr>
+<td>ER</td>
+<td>REGISTRADO</td>
+</tr>
+<tr>
+<td>ES</td>
+<td>e-SEDEX</td>
+</tr>
+<tr>
+<td>ET</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EU</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EV</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EW</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EX</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EY</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>EZ</td>
+<td>OBJETO INTERNACIONAL</td>
+</tr>
+<tr>
+<td>FA</td>
+<td>FAC REGISTRATO (LÓGICO) </td>
+</tr>
+<tr>
+<td>FE</td>
+<td>ENCOMENDA FNDE</td>
+</tr>
+<tr>
+<td>FF</td>
+<td>REGISTRADO DETRAN</td>
+</tr>
+<tr>
+<td>FH</td>
+<td>REGISTRADO FAC COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>FM</td>
+<td>REGISTRADO - FAC MONITORADO</td>
+</tr>
+<tr>
+<td>FR</td>
+<td>REGISTRADO FAC</td>
+</tr>
+<tr>
+<td>IA</td>
+<td>INTEGRADA AVULSA</td>
+</tr>
+<tr>
+<td>IC</td>
+<td>INTEGRADA A COBRAR</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>INTEGRADA DEVOLUCAO DE DOCUMENTO</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>INTEGRADA ESPECIAL</td>
+</tr>
+<tr>
+<td>IF</td>
+<td>CPF</td>
+</tr>
+<tr>
+<td>II</td>
+<td>INTEGRADA INTERNO</td>
+</tr>
+<tr>
+<td>IK</td>
+<td>INTEGRADA COM COLETA SIMULTANEA</td>
+</tr>
+<tr>
+<td>IM</td>
+<td>INTEGRADA MEDICAMENTOS</td>
+</tr>
+<tr>
+<td>IN</td>
+<td>OBJ DE CORRESP E EMS REC EXTERIOR</td>
+</tr>
+<tr>
+<td>IP</td>
+<td>INTEGRADA PROGRAMADA</td>
+</tr>
+<tr>
+<td>IR</td>
+<td>IMPRESSO REGISTRADO</td>
+</tr>
+<tr>
+<td>IS</td>
+<td>INTEGRADA STANDARD</td>
+</tr>
+<tr>
+<td>IT</td>
+<td>INTEGRADO TERMOLÁBIL</td>
+</tr>
+<tr>
+<td>IU</td>
+<td>INTEGRADA URGENTE</td>
+</tr>
+<tr>
+<td>JA</td>
+<td>REMESSA ECONOMICA C/AR DIGITAL</td>
+</tr>
+<tr>
+<td>JB</td>
+<td>REMESSA ECONOMICA C/AR DIGITAL</td>
+</tr>
+<tr>
+<td>JC</td>
+<td>REMESSA ECONOMICA C/AR DIGITAL</td>
+</tr>
+<tr>
+<td>JD</td>
+<td>REMESSA ECONÔMICA S/ AR DIGITAL</td>
+</tr>
+<tr>
+<td>JE</td>
+<td>REMESSA ECONÔMICA C/ AR DIGITAL</td>
+</tr>
+<tr>
+<td>JG</td>
+<td>REGISTRATO AGÊNCIA (FÍSICO) </td>
+</tr>
+<tr>
+<td>JJ</td>
+<td>REGISTRADO JUSTIÇA</td>
+</tr>
+<tr>
+<td>JL</td>
+<td>OBJETO REGISTRADO (LÓGICO) </td>
+</tr>
+<tr>
+<td>JM</td>
+<td>MALA DIRETA POSTAL ESPECIAL (LÓGICO) </td>
+</tr>
+<tr>
+<td>LA</td>
+<td>LOGÍSTICA REVERSA SIMULTÂNEA - ENCOMENDA SEDEX (AGÊNCIA) </td>
+</tr>
+<tr>
+<td>LB</td>
+<td>LOGÍSTICA REVERSA SIMULTÂNEA - ENCOMENDA e-SEDEX (AGÊNCIA) </td>
+</tr>
+<tr>
+<td>LC</td>
+<td>CARTA EXPRESSA</td>
+</tr>
+<tr>
+<td>LE</td>
+<td>LOGÍSTICA REVERSA ECONOMICA</td>
+</tr>
+<tr>
+<td>LP</td>
+<td>LOGÍSTICA REVERSA SIMULTÂNEA - ENCOMENDA PAC (AGÊNCIA) </td>
+</tr>
+<tr>
+<td>LS</td>
+<td>LOGISTICA REVERSA SEDEX</td>
+</tr>
+<tr>
+<td>LV</td>
+<td>LOGISTICA REVERSA EXPRESSA</td>
+</tr>
+<tr>
+<td>LX</td>
+<td>CARTA EXPRESSA</td>
+</tr>
+<tr>
+<td>LY</td>
+<td>CARTA EXPRESSA</td>
+</tr>
+<tr>
+<td>MA</td>
+<td>SERVIÇOS ADICIONAIS</td>
+</tr>
+<tr>
+<td>MB</td>
+<td>TELEGRAMA DE BALCÃO</td>
+</tr>
+<tr>
+<td>MC</td>
+<td>MALOTE CORPORATIVO</td>
+</tr>
+<tr>
+<td>ME</td>
+<td>TELEGRAMA</td>
+</tr>
+<tr>
+<td>MF</td>
+<td>TELEGRAMA FONADO</td>
+</tr>
+<tr>
+<td>MK</td>
+<td>TELEGRAMA CORPORATIVO</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>TELEGRAMA GRANDES CLIENTES</td>
+</tr>
+<tr>
+<td>MP</td>
+<td>TELEGRAMA PRÊ-PAGO</td>
+</tr>
+<tr>
+<td>MS</td>
+<td>ENCOMENDA SAUDE</td>
+</tr>
+<tr>
+<td>MT</td>
+<td>TELEGRAMA VIA TELEMAIL</td>
+</tr>
+<tr>
+<td>MY</td>
+<td>TELEGRAMA INTERNACIONAL ENTRANTE</td>
+</tr>
+<tr>
+<td>MZ</td>
+<td>TELEGRAMA VIA CORREIOS ON LINE</td>
+</tr>
+<tr>
+<td>NE</td>
+<td>TELE SENA RESGATADA</td>
+</tr>
+<tr>
+<td>PA</td>
+<td>PASSAPORTE</td>
+</tr>
+<tr>
+<td>PB</td>
+<td>ENCOMENDA PAC - NÃO URGENTE</td>
+</tr>
+<tr>
+<td>PC</td>
+<td>ENCOMENDA PAC A COBRAR</td>
+</tr>
+<tr>
+<td>PD</td>
+<td>ENCOMENDA PAC - NÃO URGENTE</td>
+</tr>
+<tr>
+<td>PF</td>
+<td>PASSAPORTE</td>
+</tr>
+<tr>
+<td>PG</td>
+<td>ENCOMENDA PAC (ETIQUETA FÍSICA) </td>
+</tr>
+<tr>
+<td>PH</td>
+<td>ENCOMENDA PAC (ETIQUETA LÓGICA) </td>
+</tr>
+<tr>
+<td>PR</td>
+<td>REEMBOLSO POSTAL - CLIENTE AVULSO</td>
+</tr>
+<tr>
+<td>RA</td>
+<td>REGISTRADO PRIORITÁRIO</td>
+</tr>
+<tr>
+<td>RB</td>
+<td>CARTA REGISTRADA</td>
+</tr>
+<tr>
+<td>RC</td>
+<td>CARTA REGISTRADA COM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>RD</td>
+<td>REMESSA ECONOMICA DETRAN</td>
+</tr>
+<tr>
+<td>RE</td>
+<td>REGISTRADO ECONÔMICO</td>
+</tr>
+<tr>
+<td>RF</td>
+<td>OBJETO DA RECEITA FEDERAL</td>
+</tr>
+<tr>
+<td>RG</td>
+<td>REGISTRADO DO SISTEMA SARA</td>
+</tr>
+<tr>
+<td>RH</td>
+<td>REGISTRADO COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>RI</td>
+<td>REGISTRADO</td>
+</tr>
+<tr>
+<td>RJ</td>
+<td>REGISTRADO AGÊNCIA</td>
+</tr>
+<tr>
+<td>RK</td>
+<td>REGISTRADO AGÊNCIA</td>
+</tr>
+<tr>
+<td>RL</td>
+<td>REGISTRADO LÉGICO</td>
+</tr>
+<tr>
+<td>RM</td>
+<td>REGISTRADO AGÊNCIA</td>
+</tr>
+<tr>
+<td>RN</td>
+<td>REGISTRADO AGÊNCIA</td>
+</tr>
+<tr>
+<td>RO</td>
+<td>REGISTRADO AGÊNCIA</td>
+</tr>
+<tr>
+<td>RP</td>
+<td>REEMBOLSO POSTAL - CLIENTE INSCRITO</td>
+</tr>
+<tr>
+<td>RQ</td>
+<td>REGISTRADO AGÊNCIA</td>
+</tr>
+<tr>
+<td>RR</td>
+<td>CARTA REGISTRADA SEM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>REGISTRADO LÓGICO</td>
+</tr>
+<tr>
+<td>RT</td>
+<td>REM ECON TALAO/CARTAO SEM AR DIGITAL</td>
+</tr>
+<tr>
+<td>RU</td>
+<td>REGISTRADO SERVIÇO ECT</td>
+</tr>
+<tr>
+<td>RV</td>
+<td>REM ECON CRLV/CRV/CNH COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>RY</td>
+<td>REM ECON TALAO/CARTAO COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>RZ</td>
+<td>REGISTRADO</td>
+</tr>
+<tr>
+<td>SA</td>
+<td>SEDEX ANOREG</td>
+</tr>
+<tr>
+<td>SB</td>
+<td>SEDEX 10 AGÊNCIA (FÍSICO) </td>
+</tr>
+<tr>
+<td>SC</td>
+<td>SEDEX A COBRAR</td>
+</tr>
+<tr>
+<td>SD</td>
+<td>REMESSA EXPRESSA DETRAN</td>
+</tr>
+<tr>
+<td>SE</td>
+<td>ENCOMENDA SEDEX</td>
+</tr>
+<tr>
+<td>SF</td>
+<td>SEDEX AGÊNCIA</td>
+</tr>
+<tr>
+<td>SG</td>
+<td>SEDEX DO SISTEMA SARA</td>
+</tr>
+<tr>
+<td>RH</td>
+<td>REGISTRADO COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>SEDEX AGÊNCIA</td>
+</tr>
+<tr>
+<td>SJ</td>
+<td>SEDEX HOJE</td>
+</tr>
+<tr>
+<td>SK</td>
+<td>SEDEX AGÊNCIA</td>
+</tr>
+<tr>
+<td>SL</td>
+<td>SEDEX LÊGICO</td>
+</tr>
+<tr>
+<td>SM</td>
+<td>SEDEX MESMO DIA</td>
+</tr>
+<tr>
+<td>SN</td>
+<td>SEDEX COM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>SO</td>
+<td>SEDEX AGÊNCIA</td>
+</tr>
+<tr>
+<td>SP</td>
+<td>SEDEX PRÉ-FRANQUEADO</td>
+</tr>
+<tr>
+<td>SQ</td>
+<td>SEDEX</td>
+</tr>
+<tr>
+<td>SR</td>
+<td>SEDEX</td>
+</tr>
+<tr>
+<td>SS</td>
+<td>SEDEX FÍSICO</td>
+</tr>
+<tr>
+<td>ST</td>
+<td>REM EXPRES TALAO/CARTAO SEM AR DIGITAL</td>
+</tr>
+<tr>
+<td>SU</td>
+<td>ENCOMENDA SERVIÇO EXPRESSA ECT</td>
+</tr>
+<tr>
+<td>SV</td>
+<td>REM EXPRES CRLV/CRV/CNH COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>SW</td>
+<td>e-SEDEX</td>
+</tr>
+<tr>
+<td>SX</td>
+<td>SEDEX 10</td>
+</tr>
+<tr>
+<td>SY</td>
+<td>REM EXPRES TALAO/CARTAO COM AR DIGITAL</td>
+</tr>
+<tr>
+<td>SZ</td>
+<td>SEDEX AGÊNCIA</td>
+</tr>
+<tr>
+<td>TE</td>
+<td>TESTE (OBJETO PARA TREINAMENTO) </td>
+</tr>
+<tr>
+<td>TS</td>
+<td>TESTE (OBJETO PARA TREINAMENTO) </td>
+</tr>
+<tr>
+<td>VA</td>
+<td>ENCOMENDAS COM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>VC</td>
+<td>ENCOMENDAS</td>
+</tr>
+<tr>
+<td>VD</td>
+<td>ENCOMENDAS COM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>VE</td>
+<td>ENCOMENDAS</td>
+</tr>
+<tr>
+<td>VF</td>
+<td>ENCOMENDAS COM VALOR DECLARADO</td>
+</tr>
+<tr>
+<td>XM</td>
+<td>SEDEX MUNDI</td>
+</tr>
+<tr>
+<td>XR</td>
+<td>ENCOMENDA SUR POSTAL EXPRESSO</td>
+</tr>
+<tr>
+<td>XX</td>
+<td>ENCOMENDA SUR POSTAL 24 HORAS</td>
+</tr>
+</table>

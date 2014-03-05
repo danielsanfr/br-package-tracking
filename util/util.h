@@ -33,6 +33,9 @@
 #include <QIODevice>
 #include <QtXml/QXmlStreamReader>
 
+#define PATH_SERVICES QString("post-office-sevices.xml")
+#define PATH_COUNTRIES QString("countries-infos.xml")
+
 namespace brpackagetracking {
 namespace util {
 class Util : public QObject {

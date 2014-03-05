@@ -1,4 +1,4 @@
-BrPackageTracking API
+Br Package Tracking API
 ==================
 Using this small API you can get all the updates tracking of your order it from your respective tracking code. Also you can get various information regarding your code rastreamente. This information is retrieved using the web based postal service of Brazil.
 
@@ -25,9 +25,8 @@ How to use
 You have to execute the following steps for use this API in your project:
 
 - You have to copy the BrPackageTracking API to your project root folder.
-
+- You must copy the (*XML*) files that are in the **assets** folder to **the folder where the executable of your project** or **put a new path for them in the Util class**, using the **PATH_SERVICES** and **PATH_COUNTRIES** defines.
 - Include the **qt += network** in your **.pro**.
-
 - Include the **package.h** and **model/information.h** file to your *qt class*, also include the name spaces **brpackagetracking** and **brpackagetracking::model** as follow:
 
 ```c++

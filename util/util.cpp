@@ -37,8 +37,8 @@ QMap<QString, QString> Util::countryInfosByCountryAcronym(QString countryAcronym
 }
 
 void Util::loadData() {
-    QFile fileServies("post-office-sevices.xml");
-    QFile fileCountries("countries-infos.xml");
+    QFile fileServies(PATH_SERVICES);
+    QFile fileCountries(PATH_COUNTRIES);
     QString servicesXml;
     QString countriesXml;
     if (fileServies.open(QFile::ReadOnly | QIODevice::Text)) {
@@ -91,7 +91,6 @@ void Util::loadData() {
             }
         }
     }
-    qDebug() << "Util::loadData:" << m_services.size();
     if (!countriesXml.isEmpty()) {
         QXmlStreamReader xmlStreamReader(countriesXml);
         while (!xmlStreamReader.atEnd() && !xmlStreamReader.hasError()) {
@@ -147,5 +146,4 @@ void Util::loadData() {
             }
         }
     }
-    qDebug() << "Util::loadData:" << m_countries.size();
 }
