@@ -48,6 +48,7 @@ public:
         NumberIsNotIntegerError,
         CountryError
     };
+    explicit Package(QString code, QString html, QList< brpackagetracking::model::Information > checkpoints, QObject *parent = 0);
     explicit Package(QString code, QObject *parent = 0);
     explicit Package(QObject *parent = 0);
     void load();

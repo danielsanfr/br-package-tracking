@@ -26,6 +26,23 @@ using namespace brpackagetracking::util;
 using namespace brpackagetracking::core;
 using namespace brpackagetracking::model;
 
+Package::Package(QString code, QString html, QList< brpackagetracking::model::Information > checkpoints, QObject *parent) :
+    QObject(parent), m_htmlParser(new HtmlParser(this)), m_downloadHtml(new DownloadHtml(this)) {
+    m_validCode = false;
+    m_code = code;
+    bool ok = connect(m_downloadHtml, SIGNAL(donwloadFinished(QString)), this, SLOT(onDownloadFinished(QString)));
+    Q_ASSERT(ok);
+    Q_UNUSED(ok);
+    bool okError = connect(m_downloadHtml, SIGNAL(downloadError(QString)), this, SIGNAL(loadError(QString)));
+    Q_ASSERT(okError);
+    Q_UNUSED(okError);
+    if (validateCode() == NoError) {
+        m_html = html;
+        m_checkpoints = checkpoints;
+    }
+}
+
+
 Package::Package(QString code, QObject *parent) :
     QObject(parent), m_htmlParser(new HtmlParser(this)), m_downloadHtml(new DownloadHtml(this)) {
     m_validCode = false;
