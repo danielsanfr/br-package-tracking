@@ -21,8 +21,10 @@
 
 #include "core/htmlparser.h"
 
-using namespace brpackagetracking::core;
 using namespace brpackagetracking::model;
+
+namespace brpackagetracking {
+namespace core {
 
 HtmlParser::HtmlParser(QObject *parent) :
     QObject(parent) {
@@ -161,4 +163,7 @@ void HtmlParser::changeFromHtmlToXml(QString html) {
     m_xml.replace("</b>", "", Qt::CaseInsensitive);
     // ============== adiciona cabecalho xml ==============
     m_xml.insert(0, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+}
+
+}
 }

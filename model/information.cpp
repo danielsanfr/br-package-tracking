@@ -21,7 +21,8 @@
 
 #include "model/information.h"
 
-using namespace brpackagetracking::model;
+namespace brpackagetracking {
+namespace model {
 
 Information::Information(QString date, QString location, QString situation, QObject *parent) :
     QObject(parent), m_date(""), m_location(""), m_situation("") {
@@ -84,4 +85,7 @@ Information &Information::operator=(const Information &other) {
         emit situationChanged();
     }
     return *this;
+}
+
+}
 }

@@ -21,7 +21,8 @@
 
 #include "core/downloadhtml.h"
 
-using namespace brpackagetracking::core;
+namespace brpackagetracking {
+namespace core {
 
 DownloadHtml::DownloadHtml(QObject *parent) :
     QObject(parent), m_accessManager(new QNetworkAccessManager(this)) {
@@ -45,4 +46,7 @@ void DownloadHtml::onDownloadFinished(QNetworkReply *replay) {
     } else {
         emit downloadError(replay->errorString());
     }
+}
+
+}
 }

@@ -21,10 +21,11 @@
 
 #include "package.h"
 
-using namespace brpackagetracking;
 using namespace brpackagetracking::util;
 using namespace brpackagetracking::core;
 using namespace brpackagetracking::model;
+
+namespace brpackagetracking {
 
 Package::Package(QString code, QString html, QList< brpackagetracking::model::Information > checkpoints, QObject *parent) :
     QObject(parent), m_htmlParser(new HtmlParser(this)), m_downloadHtml(new DownloadHtml(this)) {
@@ -165,4 +166,6 @@ QString Package::countryAcronym() const {
 
 QList< Information > Package::checkpoints() const {
     return m_checkpoints;
+}
+
 }
