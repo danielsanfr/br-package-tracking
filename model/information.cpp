@@ -33,8 +33,8 @@ Information::Information(QString date, QString location, QString situation, QObj
     emit situationChanged();
 }
 
-Information::Information(const Information &other) :
-   QObject(),  m_date(""), m_location(""), m_situation("") {
+Information::Information(const Information &other, QObject *parent) :
+   QObject(parent),  m_date(""), m_location(""), m_situation("") {
     m_date = other.date();
     emit dateChanged();
     m_location = other.location();

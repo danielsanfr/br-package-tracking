@@ -34,7 +34,7 @@ class Information : public QObject {
     Q_PROPERTY(QString situation READ situation WRITE setSituation NOTIFY situationChanged FINAL)
 public:
     explicit Information(QString date, QString location, QString situation, QObject *parent = 0);
-    Information(const Information &other);
+    Information(const Information &other, QObject *parent = 0);
     explicit Information(QObject *parent = 0);
     Q_INVOKABLE QString date() const;
     Q_INVOKABLE void setDate(QString newDate);
