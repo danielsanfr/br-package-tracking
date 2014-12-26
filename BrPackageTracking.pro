@@ -4,30 +4,15 @@
 #
 #-------------------------------------------------
 
-QT       += core
-QT       += network
+TEMPLATE = subdirs
 
-QT       -= gui
+#CONFIG+=ordered
 
-TARGET = BrPackageTracking
-CONFIG   += console
-CONFIG   -= app_bundle
+SUBDIRS = \
+    src \
+    example
 
-TEMPLATE = app
+example.depends = src
 
-QMAKE_CXXFLAGS += -std=c++11
-
-SOURCES += main.cpp \
-    src/util/downloadhtml.cpp \
-    src/util/util.cpp \
-    src/package.cpp \
-    src/checkpoint.cpp \
-    src/brpostofficeprovider.cpp
-
-HEADERS += \
-    src/util/downloadhtml.h \
-    src/util/util.h \
-    src/package.h \
-    src/checkpoint.h \
-    src/shippingcarrierprovider.h \
-    src/brpostofficeprovider.h
+OTHER_FILES += \
+    defaults.pri

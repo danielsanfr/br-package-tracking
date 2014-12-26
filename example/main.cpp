@@ -34,9 +34,9 @@
 #include <QObject>
 #include <QCoreApplication>
 
-#include "src/package.h"
-#include "src/brpostofficeprovider.h"
-#include "src/shippingcarrierprovider.h"
+#include <Package>
+#include <BrPostofficeProvider>
+#include <ShippingCarrierProvider>
 
 using namespace brpackagetracking;
 
