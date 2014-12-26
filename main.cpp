@@ -1,4 +1,14 @@
-/* Copyright (c) 2014 Daniel San Ferreira da Rocha <daniel.samrocha@gmail.com>
+/****************************************************************************
+ *
+ * Copyright (c) 2014-2014 Daniel San Ferreira da Rocha <daniel.samrocha@gmail.com>
+ *
+ * This file is part of the BrPackageTracking API.
+ *
+ *    Contact: http://www.danielsan.com.br
+ *       File: main,cpp
+ *     Author: daniel
+ * Created on: 23/12/2014
+ *    Version:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -17,29 +27,49 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */
+ *
+ ***************************************************************************/
 
+#include <QDebug>
+#include <QObject>
 #include <QCoreApplication>
 
-#include "package.h"
-#include "handlerconnect.h"
+#include "src/package.h"
+#include "src/brpostofficeprovider.h"
+#include "src/shippingcarrierprovider.h"
 
 using namespace brpackagetracking;
 
 int main(int argc, char *argv[]) {
-    QCoreApplication a(argc, argv);
-    HandlerConnect *handler = new HandlerConnect();
-    Package *package = new Package("RC274812293HK");
-    package->connect(package, SIGNAL(loadCompleted(brpackagetracking::Package*)), handler, SLOT(handler(brpackagetracking::Package*)));
-    package->connect(package, SIGNAL(loadError(QString)), handler, SLOT(handlerError(QString)));
-    if (package->validateCode() == Package::NoError) {
-        package->load();
-        qDebug() << "main:" << "Package code:" << package->code();
-        qDebug() << "main:" << "Package service:" << package->serviceCode();
-        qDebug() << "main:" << "Package number:" << package->number();
-        qDebug() << "main:" << "Package country acronym:" << package->countryAcronym();
-        qDebug() << "main:" << "Package service name:" << package->serviceName();
-        qDebug() << "main:" << "Package country name:" << package->countryName();
+    QCoreApplication app(argc, argv);
+
+    Package package("");
+    if (!package.isValid())
+        return -1;
+
+    ShippingCarrierProvider *shippingCarrierProvider;
+    switch (package.shippingCarrier()) {
+    case Package::BrPostOffice:
+    default:
+        shippingCarrierProvider = new BrPostOfficeProvider(&app);
+        break;
     }
-    return a.exec();
+    bool ok = QObject::connect(shippingCarrierProvider, &ShippingCarrierProvider::finished,
+                               [&package, &app] (QList<brpackagetracking::Checkpoint> checkpoints) {
+            qDebug() << "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                        "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
+            qDebug() << __FILE__ << __PRETTY_FUNCTION__ << __LINE__ + ":";
+            qDebug() << "\nPackage code:" << package.code();
+            qDebug() << "Package service name:" << package.serviceName();
+            qDebug() << "Package country name:" << package.countryName() << "\n";
+            foreach (Checkpoint checkpoint, checkpoints)
+                qDebug() << checkpoint.dateTime() << checkpoint.location() << checkpoint.situation();
+            qDebug() << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                        "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n";
+            app.exit();
+    });
+    Q_ASSERT(ok);
+    shippingCarrierProvider->getCheckpoints(package.code());
+
+    return app.exec();
 }

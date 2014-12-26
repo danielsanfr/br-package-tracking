@@ -15,19 +15,19 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
+QMAKE_CXXFLAGS += -std=c++11
 
 SOURCES += main.cpp \
-    package.cpp \
-    core/htmlparser.cpp \
-    core/downloadhtml.cpp \
-    util/util.cpp \
-    handlerconnect.cpp \
-    model/information.cpp
+    src/util/downloadhtml.cpp \
+    src/util/util.cpp \
+    src/package.cpp \
+    src/checkpoint.cpp \
+    src/brpostofficeprovider.cpp
 
 HEADERS += \
-    package.h \
-    core/htmlparser.h \
-    core/downloadhtml.h \
-    util/util.h \
-    handlerconnect.h \
-    model/information.h
+    src/util/downloadhtml.h \
+    src/util/util.h \
+    src/package.h \
+    src/checkpoint.h \
+    src/shippingcarrierprovider.h \
+    src/brpostofficeprovider.h
