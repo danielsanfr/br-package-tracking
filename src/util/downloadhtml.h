@@ -1,4 +1,14 @@
-/* Copyright (c) 2014 Daniel San Ferreira da Rocha <daniel.samrocha@gmail.com>
+/****************************************************************************
+ *
+ * Copyright (c) 2014-2014 Daniel San Ferreira da Rocha <daniel.samrocha@gmail.com>
+ *
+ * This file is part of the BrPackageTracking API.
+ *
+ *    Contact: http://www.danielsan.com.br
+ *       File: downloadhtml.h
+ *     Author: daniel
+ * Created on: 23/12/2014
+ *    Version:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -17,36 +27,39 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */
+ *
+ ***************************************************************************/
 
-#include "core/downloadhtml.h"
+#ifndef DOWNLOADHTML_H
+#define DOWNLOADHTML_H
+
+#include <QUrl>
+#include <QObject>
+#include <QString>
+
+QT_BEGIN_NAMESPACE
+class QNetworkReply;
+class QNetworkAccessManager;
+QT_END_NAMESPACE
 
 namespace brpackagetracking {
-namespace core {
+namespace util {
 
-DownloadHtml::DownloadHtml(QObject *parent) :
-    QObject(parent), m_accessManager(new QNetworkAccessManager(this)) {
-    bool ok = connect(m_accessManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
-    Q_ASSERT(ok);
-    Q_UNUSED(ok);
-}
-
-void DownloadHtml::download(QString url) {
-    QUrl qUrl(url);
-    QNetworkRequest request(qUrl);
-    m_accessManager->get(request);
-    qDebug() << "DownloadHtml::download: Downalod started!";
-}
-
-void DownloadHtml::onDownloadFinished(QNetworkReply *replay) {
-    qDebug() << "DownloadHtml::onDownloadFinished: Download finished!";
-    if (replay->error() == QNetworkReply::NoError) {
-        QString html(replay->readAll());
-        emit donwloadFinished(html);
-    } else {
-        emit downloadError(replay->errorString());
-    }
-}
+class DownloadHtml : public QObject {
+    Q_OBJECT
+public:
+    DownloadHtml(QObject *parent = 0);
+    void download(const QUrl &url);
+signals:
+    void downloadError(QString error);
+    void donwloadFinished(QString html);
+private slots:
+    void onFinished(QNetworkReply *replay);
+private:
+    QNetworkAccessManager *m_networkAccessManager;
+};
 
 }
 }
+
+#endif // DOWNLOADHTML_H

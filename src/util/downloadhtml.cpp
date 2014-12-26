@@ -1,4 +1,14 @@
-/* Copyright (c) 2014 Daniel San Ferreira da Rocha <daniel.samrocha@gmail.com>
+﻿/****************************************************************************
+ *
+ * Copyright (c) 2014-2014 Daniel San Ferreira da Rocha <daniel.samrocha@gmail.com>
+ *
+ * This file is part of the BrPackageTracking API.
+ *
+ *    Contact: http://www.danielsan.com.br
+ *       File: downloadhtml.cpp
+ *     Author: daniel
+ * Created on: 23/12/2014
+ *    Version:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -17,35 +27,39 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */
+ *
+ ***************************************************************************/
 
-#ifndef DOWNLOADHTML_H
-#define DOWNLOADHTML_H
+#include "downloadhtml.h"
 
-#include <QUrl>
-#include <QDebug>
-#include <QObject>
-#include <QString>
 #include <QNetworkReply>
 #include <QNetworkRequest>
 #include <QNetworkAccessManager>
 
 namespace brpackagetracking {
-namespace core {
-class DownloadHtml : public QObject {
-    Q_OBJECT
-public:
-    explicit DownloadHtml(QObject *parent = 0);
-    void download(QString url);
-signals:
-    void downloadError(QString error);
-    void donwloadFinished(QString html);
-private slots:
-    void onDownloadFinished(QNetworkReply *replay);
-private:
-    QNetworkAccessManager *m_accessManager;
-};
-}
+namespace util {
+
+DownloadHtml::DownloadHtml(QObject *parent) :
+    QObject(parent), m_networkAccessManager(new QNetworkAccessManager(this))
+{
+    bool ok = connect(m_networkAccessManager, &QNetworkAccessManager::finished,
+                      this, &DownloadHtml::onFinished);
+    Q_ASSERT(ok);
 }
 
-#endif // DOWNLOADHTML_H
+void DownloadHtml::download(const QUrl &url)
+{
+    QNetworkRequest request(url);
+    m_networkAccessManager->get(request);
+}
+
+void DownloadHtml::onFinished(QNetworkReply *replay)
+{
+    if (replay->error() == QNetworkReply::NoError)
+        emit donwloadFinished(QString(replay->readAll()));
+    else
+        emit downloadError(replay->errorString());
+}
+
+}
+}
