@@ -4,7 +4,7 @@ Using this small API you can get all the updates tracking of your order it from 
 
 ## Author
 
-This small API was developed by **Daniel San F. da Rocha**. Any questions or suggestions can contact me, I will be very happy to receive my posts about this project.
+This small API was developed by **Daniel San F. da Rocha**. Any questions or suggestions don't hesitate to contact me, I'll be very happy to receive posts from this project.
 
 ## License
 
