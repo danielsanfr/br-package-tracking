@@ -50,12 +50,11 @@ using namespace util;
 BrPostOfficeProvider::BrPostOfficeProvider(QObject *parent) : ShippingCarrierProvider(parent)
 {
     m_download = new DownloadHtml(this);
-    bool ok =
-            connect(m_download, &DownloadHtml::downloadError,
-                    this, &BrPostOfficeProvider::onDownloadError);
+    bool ok = connect(m_download, &DownloadHtml::downloadError,
+                      this, &BrPostOfficeProvider::onDownloadError);
     Q_ASSERT(ok);
-    connect(m_download, &DownloadHtml::donwloadFinished,
-            this, &BrPostOfficeProvider::onDownloadFinished);
+    ok = connect(m_download, &DownloadHtml::donwloadFinished,
+                 this, &BrPostOfficeProvider::onDownloadFinished);
     Q_ASSERT(ok);
 }
 
