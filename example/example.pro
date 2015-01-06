@@ -10,6 +10,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp
 
-LIBS += -L../src -lpackagetracking
+LIBS += -L../src -lbrpackagetracking
 
 include(../defaults.pri)
