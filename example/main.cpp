@@ -43,7 +43,7 @@ using namespace brpackagetracking;
 int main(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
 
-    Package package("RC477476070HK");
+    Package package("");
     if (!package.isValid())
         return -1;
 
