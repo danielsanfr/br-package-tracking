@@ -43,7 +43,7 @@ using namespace brpackagetracking;
 int main(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
 
-    Package package("");
+    Package package("RC477476070HK");
     if (!package.isValid())
         return -1;
 
@@ -58,8 +58,7 @@ int main(int argc, char *argv[]) {
                                [&package, &app] (QList<brpackagetracking::Checkpoint> checkpoints) {
             qDebug() << "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
                         "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%";
-            qDebug() << __FILE__ << __PRETTY_FUNCTION__ << __LINE__ + ":";
-            qDebug() << "\nPackage code:" << package.code();
+            qDebug() << "Package code:" << package.code();
             qDebug() << "Package service name:" << package.serviceName();
             qDebug() << "Package country name:" << package.countryName() << "\n";
             foreach (Checkpoint checkpoint, checkpoints)

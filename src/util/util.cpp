@@ -34,12 +34,8 @@
 
 #include <QFile>
 #include <QDebug>
-#include <QPointer>
 #include <QStringRef>
 #include <QXmlStreamReader>
-
-#define PATH_SERVICES QString("post-office-sevices.xml")
-#define PATH_COUNTRIES QString("countries-infos.xml")
 
 namespace brpackagetracking {
 namespace util {
@@ -73,7 +69,7 @@ QMap<QString, QString> Util::countryInfosByAcronym(const QString &countryAcronym
 
 bool Util::loadServices()
 {
-    QString servicesXml= loadFile(PATH_SERVICES);
+    QString servicesXml = loadFile(":/post-office-sevices.xml");
     if (servicesXml.isEmpty())
         return false;
 
@@ -86,7 +82,7 @@ bool Util::loadServices()
 
 bool Util::loadCountriesInfos()
 {
-    QString contriesXml= loadFile(PATH_COUNTRIES);
+    QString contriesXml = loadFile(":/countries-infos.xml");
     if (contriesXml.isEmpty())
         return false;
 

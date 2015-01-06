@@ -24,7 +24,6 @@ The license of this API is the MIT License.
 
 You have to execute the following steps for use this API in your project:
 
-- You must copy the (*XML*) files that are in the **assets** folder to **the folder where the executable of your project**.
 - Include the **LIBS += -L{PAHT_TO_LIB} -lpackagetracking** in your **.pro**.
 - Include the **QT += network** in your **.pro**.
 - Include the **QMAKE_CXXFLAGS += -std=c++11** in your **.pro**.
@@ -44,7 +43,6 @@ Below is a small example in code using the API:
 
 using namespace brpackagetracking;
 
-
 int main(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
 
@@ -61,8 +59,7 @@ int main(int argc, char *argv[]) {
     }
     bool ok = QObject::connect(shippingCarrierProvider, &ShippingCarrierProvider::finished,
                                [&package, &app] (QList<brpackagetracking::Checkpoint> checkpoints) {
-            qDebug() << __FILE__ << __PRETTY_FUNCTION__ << __LINE__ + ":";
-            qDebug() << "\nPackage code:" << package.code();
+            qDebug() << "Package code:" << package.code();
             qDebug() << "Package service name:" << package.serviceName();
             qDebug() << "Package country name:" << package.countryName() << "\n";
             foreach (Checkpoint checkpoint, checkpoints)

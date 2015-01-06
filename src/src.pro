@@ -24,4 +24,7 @@ HEADERS += \
     shippingcarrierprovider.h \
     brpostofficeprovider.h
 
+RESOURCES += \
+    xml.qrc
+
 include(../defaults.pri)
