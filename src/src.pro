@@ -3,7 +3,8 @@ QT       += core network
 CONFIG   += console
 CONFIG   -= app_bundle
 
-QMAKE_CXXFLAGS += -std=c++11
+greaterThan(QT_MAJOR_VERSION, 4): \
+    QMAKE_CXXFLAGS += -std=c++11
 
 TEMPLATE = lib
 
