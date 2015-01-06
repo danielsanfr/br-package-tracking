@@ -24,7 +24,7 @@ The license of this API is the MIT License.
 
 You have to execute the following steps for use this API in your project:
 
-- Include the **LIBS += -L{PAHT_TO_LIB} -lpackagetracking** in your **.pro**.
+- Include the **LIBS += -L{PAHT_TO_LIB} -lbrpackagetracking** in your **.pro**.
 - Include the **QT += network** in your **.pro**.
 - Include the **QMAKE_CXXFLAGS += -std=c++11** in your **.pro**.
 

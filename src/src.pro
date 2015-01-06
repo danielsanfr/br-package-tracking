@@ -7,7 +7,7 @@ QMAKE_CXXFLAGS += -std=c++11
 
 TEMPLATE = lib
 
-TARGET = packagetracking
+TARGET = brpackagetracking
 
 SOURCES += \
     util/downloadhtml.cpp \
