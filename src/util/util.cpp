@@ -71,17 +71,39 @@ QMap<QString, QString> Util::countryInfosByAcronym(const QString &countryAcronym
     return m_countries.take(countryAcronym);
 }
 
+void Util::populateServices(QStringList *data)
+{
+    m_services.insert(data->at(0), data->at(1));
+}
+
+void Util::populateContries(QStringList *data)
+{
+    QMap<QString, QString> countryMap;
+    countryMap.insert("ord", data->at(0));
+    countryMap.insert("country_name", data->at(1));
+    countryMap.insert("triple_acronym", data->at(3));
+    countryMap.insert("code", data->at(4));
+    m_countries.insert(data->at(2), countryMap);
+}
+
 bool Util::loadServices()
 {
     QString servicesXml= loadFile(PATH_SERVICES);
     if (servicesXml.isEmpty())
         return false;
 
-    parseXml(servicesXml, [this] (const QStringList &stringList) -> void {
-        m_services.insert(stringList.at(0), stringList.at(1));
-    });
+    bool ok = connect(this, SIGNAL(populateHash(QStringList *)),
+                      this, SLOT(populateServices(QStringList *)));
 
-    return true;
+    Q_ASSERT(ok);
+
+    parseXml(servicesXml);
+
+    ok = disconnect(this, SIGNAL(populateHash(QStringList *)),
+                    this, SLOT(populateServices(QStringList *)));
+    Q_ASSERT(ok);
+
+    return ok;
 }
 
 bool Util::loadCountriesInfos()
@@ -90,16 +112,17 @@ bool Util::loadCountriesInfos()
     if (contriesXml.isEmpty())
         return false;
 
-    parseXml(contriesXml, [this] (const QStringList &stringList) -> void {
-        QMap<QString, QString> countryMap;
-        countryMap.insert("ord", stringList.at(0));
-        countryMap.insert("country_name", stringList.at(1));
-        countryMap.insert("triple_acronym", stringList.at(3));
-        countryMap.insert("code", stringList.at(4));
-        m_countries.insert(stringList.at(2), countryMap);
-    });
+    bool ok = connect(this, SIGNAL(populateHash(QStringList *)),
+                      this, SLOT(populateContries(QStringList *)));
+    Q_ASSERT(ok);
 
-    return true;
+    parseXml(contriesXml);
+
+    ok = disconnect(this, SIGNAL(populateHash(QStringList *)),
+                    this, SLOT(populateContries(QStringList *)));
+    Q_ASSERT(ok);
+
+    return ok;
 }
 
 QString Util::loadFile(const QString &fileName)
@@ -115,7 +138,7 @@ QString Util::loadFile(const QString &fileName)
     return xml;
 }
 
-void Util::parseXml(const QString &xml, std::function<void (const QStringList &)> populateHash)
+void Util::parseXml(const QString &xml)
 {
     QXmlStreamReader xmlStreamReader(xml);
     while (!xmlStreamReader.atEnd() && !xmlStreamReader.hasError()) {
@@ -143,7 +166,7 @@ void Util::parseXml(const QString &xml, std::function<void (const QStringList &)
                     }
                     xmlStreamReader.readNext();
                 }
-                populateHash(stringList);
+                Q_EMIT populateHash(&stringList);
             }
         }
     }

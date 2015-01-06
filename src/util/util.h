@@ -41,8 +41,6 @@
 #include <QVariant>
 #include <QStringList>
 
-#include <functional>
-
 namespace brpackagetracking {
 namespace util {
 
@@ -70,14 +68,17 @@ public:
     void debug(const char *file, const char *func, int line, const QVariant &message);
     QString serviceNameByCode(const QString &serviceCode);
     QMap<QString, QString> countryInfosByAcronym(const QString &countryAcronym);
-signals:
-public slots:
+Q_SIGNALS:
+    void populateHash(QStringList *data);
+private Q_SLOTS:
+    void populateServices(QStringList *data);
+    void populateContries(QStringList *data);
 private:
     Util();
     bool loadServices();
     bool loadCountriesInfos();
     QString loadFile(const QString &fileName);
-    void parseXml(const QString &xml, std::function<void(const QStringList &)> populateHash);
+    void parseXml(const QString &xml);
     QHash<QString, QString> m_services;
     QHash<QString, QMap<QString, QString> > m_countries;
 };
