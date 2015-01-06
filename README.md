@@ -24,7 +24,6 @@ The license of this API is the MIT License.
 
 You have to execute the following steps for use this API in your project:
 
-- You must copy the (*XML*) files that are in the **assets** folder to **the folder where the executable of your project**.
 - Include the **LIBS += -L{PAHT_TO_LIB} -lpackagetracking** in your **.pro**.
 - Include the **QT += network** in your **.pro**.
 - Include the **QMAKE_CXXFLAGS += -std=c++11** in your **.pro**.

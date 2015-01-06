@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="post-office-sevices.xml">data/post-office-sevices.xml</file>
+        <file alias="countries-infos.xml">data/countries-infos.xml</file>
+    </qresource>
+</RCC>
+
